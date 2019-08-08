@@ -1,0 +1,979 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title>HTTP请求返回编码大全以及解释分类 | 千寻啊千寻</title>
+    <meta name="author" content="千寻啊千寻">
+    
+    <meta name="description" content="一个苦逼的程序员,主攻JAVA,略懂前端,本博客做知识记录分享使用!">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="HTTP请求返回编码大全以及解释分类"/>
+    <meta property="og:site_name" content="千寻啊千寻"/>
+
+    
+    <meta property="og:image" content=""/>
+    
+
+    
+    <meta name="baidu_union_verify" content="2a4275babd8ed916b14303755ff57f85" />
+    
+
+    
+    <meta name="baidu-site-verification" content="4tmJOCtpEA" />
+    
+
+    
+    <meta name="google-site-verification" content="zAi4cnmJb1lWLYDL64ZMF9s3-Nuqw2DKLY7fDnCOCLs" />
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="千寻啊千寻" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/css/lib/prettify-tomorrow-night-eighties.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+<body>
+    <nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">千寻啊千寻</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            分类
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class=" " href="/tags" >
+                            <i class="fa fa-tags "></i>
+                            
+                            标签
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/saidlist" >
+                            <i class="fa fa-book "></i>
+                            
+                            留言
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            关于
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            搜索
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav indigo darken-1" id="main-menu">
+        
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4 no-padding">
+                    <img class="avatar-image circle responsive-img" src="https://cdn.qianxunclub.com/head.png" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper no-padding">
+                    <div class="valign">
+                        <p class="name">千寻啊千寻</p>
+                        <p class="desc">JAVA/架构/开发</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    分类
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect  " href="/tags" >
+                    <i class="fa fa-tags "></i>
+                    
+                    标签
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/saidlist" >
+                    <i class="fa fa-book "></i>
+                    
+                    留言
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    关于
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    搜索
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav indigo darken-1" id="category-menu">
+    
+
+            
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/异常记录/">
+                    异常记录 <span class="right">6 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Linux/">
+                    Linux <span class="right">5 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/其他/">
+                    其他 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/技术杂文/">
+                    技术杂文 <span class="right">7 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/视频/">
+                    视频 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/缓存技术/">
+                    缓存技术 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Java/">
+                    Java <span class="right">6 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Java/SpringBoot/">
+                    SpringBoot <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Java/Maven/">
+                    Maven <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Java/SpringCloud/">
+                    SpringCloud <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">搜索</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        <div class="container main-container">
+    
+<nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper indigo">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+    
+    
+    <a class="breadcrumb" href="/categories/技术杂文/">技术杂文</a>
+
+
+        
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>HTTP请求返回编码大全以及解释分类</h1>
+    
+
+
+            </div>
+            <time class="pink-link-context" datetime="2018-05-06T18:08:46.000Z"><a href="/tech/httqing-qiu-fan-hui-bian-ma-da-quan-yi-ji-jie-shi-fen-lei/">2018-05-07</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+    <div class="tags-row">
+        
+            <a href="/tags/Http/" class="chip pink lighten-1">Http</a>
+        
+    </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#Status-Code-Definitions"><span class="section table-of-contents-text">Status Code Definitions</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#Informational-1xx"><span class="section table-of-contents-text">Informational 1xx</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#100-Continue"><span class="section table-of-contents-text">100 Continue</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#101-Switching-Protocols"><span class="section table-of-contents-text">101 Switching Protocols</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#Successful-2xx"><span class="section table-of-contents-text">Successful 2xx</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#200-OK"><span class="section table-of-contents-text">200 OK</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#201-Created"><span class="section table-of-contents-text">201 Created</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#202-Accepted"><span class="section table-of-contents-text">202 Accepted</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#203-Non-Authoritative-Information"><span class="section table-of-contents-text">203 Non-Authoritative Information</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#204-No-Content"><span class="section table-of-contents-text">204 No Content</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#205-Reset-Content"><span class="section table-of-contents-text">205 Reset Content</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#206-Partial-Content"><span class="section table-of-contents-text">206 Partial Content</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#Redirection-3xx"><span class="section table-of-contents-text">Redirection 3xx</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#300-Multiple-Choices"><span class="section table-of-contents-text">300 Multiple Choices</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#301-Moved-Permanently"><span class="section table-of-contents-text">301 Moved Permanently</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#302-Found"><span class="section table-of-contents-text">302 Found</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#303-See-Other"><span class="section table-of-contents-text">303 See Other</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#304-Not-Modified"><span class="section table-of-contents-text">304 Not Modified</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#305-Use-Proxy"><span class="section table-of-contents-text">305 Use Proxy</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#306-Unused"><span class="section table-of-contents-text">306 (Unused)</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#307-Temporary-Redirect"><span class="section table-of-contents-text">307 Temporary Redirect</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#Client-Error-4xx"><span class="section table-of-contents-text">Client Error 4xx</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#400-Bad-Request"><span class="section table-of-contents-text">400 Bad Request</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#401-Unauthorized"><span class="section table-of-contents-text">401 Unauthorized</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#402-Payment-Required"><span class="section table-of-contents-text">402 Payment Required</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#403-Forbidden"><span class="section table-of-contents-text">403 Forbidden</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#404-Not-Found"><span class="section table-of-contents-text">404 Not Found</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#405-Method-Not-Allowed"><span class="section table-of-contents-text">405 Method Not Allowed</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#406-Not-Acceptable"><span class="section table-of-contents-text">406 Not Acceptable</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#407-Proxy-Authentication-Required"><span class="section table-of-contents-text">407 Proxy Authentication Required</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#408-Request-Timeout"><span class="section table-of-contents-text">408 Request Timeout</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#409-Conflict"><span class="section table-of-contents-text">409 Conflict</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#410-Gone"><span class="section table-of-contents-text">410 Gone</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#411-Length-Required"><span class="section table-of-contents-text">411 Length Required</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#412-Precondition-Failed"><span class="section table-of-contents-text">412 Precondition Failed</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#413-Request-Entity-Too-Large"><span class="section table-of-contents-text">413 Request Entity Too Large</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#414-Request-URI-Too-Long"><span class="section table-of-contents-text">414 Request-URI Too Long</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#415-Unsupported-Media-Type"><span class="section table-of-contents-text">415 Unsupported Media Type</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#416-Requested-Range-Not-Satisfiable"><span class="section table-of-contents-text">416 Requested Range Not Satisfiable</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#417-Expectation-Failed"><span class="section table-of-contents-text">417 Expectation Failed</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#Server-Error-5xx"><span class="section table-of-contents-text">Server Error 5xx</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#500-Internal-Server-Error"><span class="section table-of-contents-text">500 Internal Server Error</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#501-Not-Implemented"><span class="section table-of-contents-text">501 Not Implemented</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#502-Bad-Gateway"><span class="section table-of-contents-text">502 Bad Gateway</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#503-Service-Unavailable"><span class="section table-of-contents-text">503 Service Unavailable</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#504-Gateway-Timeout"><span class="section table-of-contents-text">504 Gateway Timeout</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#505-HTTP-Version-Not-Supported"><span class="section table-of-contents-text">505 HTTP Version Not Supported</span></a></li></ol></li></ol>
+</div>
+
+
+            
+            <div class="entry pink-link-context">
+                <blockquote>
+<p>原文地址：<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_blank" rel="noopener">https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a></p>
+</blockquote>
+<h1 id="Status-Code-Definitions"><a href="#Status-Code-Definitions" class="headerlink" title="Status Code Definitions"></a>Status Code Definitions</h1><p>Each Status-Code is described below, including a description of which method(s) it can follow and any metainformation required in the response.<br><a id="more"></a></p>
+<h1 id="Informational-1xx"><a href="#Informational-1xx" class="headerlink" title="Informational 1xx"></a>Informational 1xx</h1><p>This class of status code indicates a provisional response, consisting only of the Status-Line and optional headers, and is terminated by an empty line. There are no required headers for this class of status code. Since HTTP/1.0 did not define any 1xx status codes, servers MUST NOT send a 1xx response to an HTTP/1.0 client except under experimental conditions.</p>
+<p>A client MUST be prepared to accept one or more 1xx status responses prior to a regular response, even if the client does not expect a 100 (Continue) status message. Unexpected 1xx status responses MAY be ignored by a user agent.</p>
+<p>Proxies MUST forward 1xx responses, unless the connection between the proxy and its client has been closed, or unless the proxy itself requested the generation of the 1xx response. (For example, if a</p>
+<p>proxy adds a “Expect: 100-continue” field when it forwards a request, then it need not forward the corresponding 100 (Continue) response(s).)</p>
+<h2 id="100-Continue"><a href="#100-Continue" class="headerlink" title="100 Continue"></a>100 Continue</h2><p>The client SHOULD continue with its request. This interim response is used to inform the client that the initial part of the request has been received and has not yet been rejected by the server. The client SHOULD continue by sending the remainder of the request or, if the request has already been completed, ignore this response. The server MUST send a final response after the request has been completed. See section 8.2.3 for detailed discussion of the use and handling of this status code.</p>
+<h2 id="101-Switching-Protocols"><a href="#101-Switching-Protocols" class="headerlink" title="101 Switching Protocols"></a>101 Switching Protocols</h2><p>The server understands and is willing to comply with the client’s request, via the Upgrade message header field (section 14.42), for a change in the application protocol being used on this connection. The server will switch protocols to those defined by the response’s Upgrade header field immediately after the empty line which terminates the 101 response.</p>
+<p>The protocol SHOULD be switched only when it is advantageous to do so. For example, switching to a newer version of HTTP is advantageous over older versions, and switching to a real-time, synchronous protocol might be advantageous when delivering resources that use such features.</p>
+<h1 id="Successful-2xx"><a href="#Successful-2xx" class="headerlink" title="Successful 2xx"></a>Successful 2xx</h1><p>This class of status code indicates that the client’s request was successfully received, understood, and accepted.</p>
+<h2 id="200-OK"><a href="#200-OK" class="headerlink" title="200 OK"></a>200 OK</h2><p>The request has succeeded. The information returned with the response is dependent on the method used in the request, for example:</p>
+<p>GET an entity corresponding to the requested resource is sent in the response;</p>
+<p>HEAD the entity-header fields corresponding to the requested resource are sent in the response without any message-body;</p>
+<p>POST an entity describing or containing the result of the action;</p>
+<p>TRACE an entity containing the request message as received by the end server.</p>
+<h2 id="201-Created"><a href="#201-Created" class="headerlink" title="201 Created"></a>201 Created</h2><p>The request has been fulfilled and resulted in a new resource being created. The newly created resource can be referenced by the URI(s) returned in the entity of the response, with the most specific URI for the resource given by a Location header field. The response SHOULD include an entity containing a list of resource characteristics and location(s) from which the user or user agent can choose the one most appropriate. The entity format is specified by the media type given in the Content-Type header field. The origin server MUST create the resource before returning the 201 status code. If the action cannot be carried out immediately, the server SHOULD respond with 202 (Accepted) response instead.</p>
+<p>A 201 response MAY contain an ETag response header field indicating the current value of the entity tag for the requested variant just created, see section 14.19.</p>
+<h2 id="202-Accepted"><a href="#202-Accepted" class="headerlink" title="202 Accepted"></a>202 Accepted</h2><p>The request has been accepted for processing, but the processing has not been completed. The request might or might not eventually be acted upon, as it might be disallowed when processing actually takes place. There is no facility for re-sending a status code from an asynchronous operation such as this.</p>
+<p>The 202 response is intentionally non-committal. Its purpose is to allow a server to accept a request for some other process (perhaps a batch-oriented process that is only run once per day) without requiring that the user agent’s connection to the server persist until the process is completed. The entity returned with this response SHOULD include an indication of the request’s current status and either a pointer to a status monitor or some estimate of when the user can expect the request to be fulfilled.</p>
+<h2 id="203-Non-Authoritative-Information"><a href="#203-Non-Authoritative-Information" class="headerlink" title="203 Non-Authoritative Information"></a>203 Non-Authoritative Information</h2><p>The returned metainformation in the entity-header is not the definitive set as available from the origin server, but is gathered from a local or a third-party copy. The set presented MAY be a subset or superset of the original version. For example, including local annotation information about the resource might result in a superset of the metainformation known by the origin server. Use of this response code is not required and is only appropriate when the response would otherwise be 200 (OK).</p>
+<h2 id="204-No-Content"><a href="#204-No-Content" class="headerlink" title="204 No Content"></a>204 No Content</h2><p>The server has fulfilled the request but does not need to return an entity-body, and might want to return updated metainformation. The response MAY include new or updated metainformation in the form of entity-headers, which if present SHOULD be associated with the requested variant.</p>
+<p>If the client is a user agent, it SHOULD NOT change its document view from that which caused the request to be sent. This response is primarily intended to allow input for actions to take place without causing a change to the user agent’s active document view, although any new or updated metainformation SHOULD be applied to the document currently in the user agent’s active view.</p>
+<p>The 204 response MUST NOT include a message-body, and thus is always terminated by the first empty line after the header fields.</p>
+<h2 id="205-Reset-Content"><a href="#205-Reset-Content" class="headerlink" title="205 Reset Content"></a>205 Reset Content</h2><p>The server has fulfilled the request and the user agent SHOULD reset the document view which caused the request to be sent. This response is primarily intended to allow input for actions to take place via user input, followed by a clearing of the form in which the input is given so that the user can easily initiate another input action. The response MUST NOT include an entity.</p>
+<h2 id="206-Partial-Content"><a href="#206-Partial-Content" class="headerlink" title="206 Partial Content"></a>206 Partial Content</h2><p>The server has fulfilled the partial GET request for the resource. The request MUST have included a Range header field (section 14.35) indicating the desired range, and MAY have included an If-Range header field (section 14.27) to make the request conditional.</p>
+<p>The response MUST include the following header fields:</p>
+<pre><code>- Either a Content-Range header field (section 14.16) indicating
+  the range included with this response, or a multipart/byteranges
+  Content-Type including Content-Range fields for each part. If a
+  Content-Length header field is present in the response, its
+  value MUST match the actual number of OCTETs transmitted in the
+  message-body.
+- Date
+- ETag and/or Content-Location, if the header would have been sent
+  in a 200 response to the same request
+- Expires, Cache-Control, and/or Vary, if the field-value might
+  differ from that sent in any previous response for the same
+  variant
+</code></pre><p>If the 206 response is the result of an If-Range request that used a strong cache validator (see section 13.3.3), the response SHOULD NOT include other entity-headers. If the response is the result of an If-Range request that used a weak validator, the response MUST NOT include other entity-headers; this prevents inconsistencies between cached entity-bodies and updated headers. Otherwise, the response MUST include all of the entity-headers that would have been returned with a 200 (OK) response to the same request.</p>
+<p>A cache MUST NOT combine a 206 response with other previously cached content if the ETag or Last-Modified headers do not match exactly, see 13.5.4.</p>
+<p>A cache that does not support the Range and Content-Range headers MUST NOT cache 206 (Partial) responses.</p>
+<h1 id="Redirection-3xx"><a href="#Redirection-3xx" class="headerlink" title="Redirection 3xx"></a>Redirection 3xx</h1><p>This class of status code indicates that further action needs to be taken by the user agent in order to fulfill the request. The action required MAY be carried out by the user agent without interaction with the user if and only if the method used in the second request is GET or HEAD. A client SHOULD detect infinite redirection loops, since such loops generate network traffic for each redirection.</p>
+<pre><code>Note: previous versions of this specification recommended a
+maximum of five redirections. Content developers should be aware
+that there might be clients that implement such a fixed
+limitation.
+</code></pre><h2 id="300-Multiple-Choices"><a href="#300-Multiple-Choices" class="headerlink" title="300 Multiple Choices"></a>300 Multiple Choices</h2><p>The requested resource corresponds to any one of a set of representations, each with its own specific location, and agent- driven negotiation information (section 12) is being provided so that the user (or user agent) can select a preferred representation and redirect its request to that location.</p>
+<p>Unless it was a HEAD request, the response SHOULD include an entity containing a list of resource characteristics and location(s) from which the user or user agent can choose the one most appropriate. The entity format is specified by the media type given in the Content- Type header field. Depending upon the format and the capabilities of</p>
+<p>the user agent, selection of the most appropriate choice MAY be performed automatically. However, this specification does not define any standard for such automatic selection.</p>
+<p>If the server has a preferred choice of representation, it SHOULD include the specific URI for that representation in the Location field; user agents MAY use the Location field value for automatic redirection. This response is cacheable unless indicated otherwise.</p>
+<h2 id="301-Moved-Permanently"><a href="#301-Moved-Permanently" class="headerlink" title="301 Moved Permanently"></a>301 Moved Permanently</h2><p>The requested resource has been assigned a new permanent URI and any future references to this resource SHOULD use one of the returned URIs. Clients with link editing capabilities ought to automatically re-link references to the Request-URI to one or more of the new references returned by the server, where possible. This response is cacheable unless indicated otherwise.</p>
+<p>The new permanent URI SHOULD be given by the Location field in the response. Unless the request method was HEAD, the entity of the response SHOULD contain a short hypertext note with a hyperlink to the new URI(s).</p>
+<p>If the 301 status code is received in response to a request other than GET or HEAD, the user agent MUST NOT automatically redirect the request unless it can be confirmed by the user, since this might change the conditions under which the request was issued.</p>
+<pre><code>Note: When automatically redirecting a POST request after
+receiving a 301 status code, some existing HTTP/1.0 user agents
+will erroneously change it into a GET request.
+</code></pre><h2 id="302-Found"><a href="#302-Found" class="headerlink" title="302 Found"></a>302 Found</h2><p>The requested resource resides temporarily under a different URI. Since the redirection might be altered on occasion, the client SHOULD continue to use the Request-URI for future requests. This response is only cacheable if indicated by a Cache-Control or Expires header field.</p>
+<p>The temporary URI SHOULD be given by the Location field in the response. Unless the request method was HEAD, the entity of the response SHOULD contain a short hypertext note with a hyperlink to the new URI(s).</p>
+<p>If the 302 status code is received in response to a request other than GET or HEAD, the user agent MUST NOT automatically redirect the request unless it can be confirmed by the user, since this might change the conditions under which the request was issued.</p>
+<pre><code>Note: RFC 1945 and RFC 2068 specify that the client is not allowed
+to change the method on the redirected request.  However, most
+existing user agent implementations treat 302 as if it were a 303
+response, performing a GET on the Location field-value regardless
+of the original request method. The status codes 303 and 307 have
+been added for servers that wish to make unambiguously clear which
+kind of reaction is expected of the client.
+</code></pre><h2 id="303-See-Other"><a href="#303-See-Other" class="headerlink" title="303 See Other"></a>303 See Other</h2><p>The response to the request can be found under a different URI and SHOULD be retrieved using a GET method on that resource. This method exists primarily to allow the output of a POST-activated script to redirect the user agent to a selected resource. The new URI is not a substitute reference for the originally requested resource. The 303 response MUST NOT be cached, but the response to the second (redirected) request might be cacheable.</p>
+<p>The different URI SHOULD be given by the Location field in the response. Unless the request method was HEAD, the entity of the response SHOULD contain a short hypertext note with a hyperlink to the new URI(s).</p>
+<pre><code>Note: Many pre-HTTP/1.1 user agents do not understand the 303
+status. When interoperability with such clients is a concern, the
+302 status code may be used instead, since most user agents react
+to a 302 response as described here for 303.
+</code></pre><h2 id="304-Not-Modified"><a href="#304-Not-Modified" class="headerlink" title="304 Not Modified"></a>304 Not Modified</h2><p>If the client has performed a conditional GET request and access is allowed, but the document has not been modified, the server SHOULD respond with this status code. The 304 response MUST NOT contain a message-body, and thus is always terminated by the first empty line after the header fields.</p>
+<p>The response MUST include the following header fields:</p>
+<pre><code>- Date, unless its omission is required by section 14.18.1
+</code></pre><p>If a clockless origin server obeys these rules, and proxies and clients add their own Date to any response received without one (as already specified by [RFC 2068], section 14.19), caches will operate correctly.</p>
+<pre><code>- ETag and/or Content-Location, if the header would have been sent
+  in a 200 response to the same request
+- Expires, Cache-Control, and/or Vary, if the field-value might
+  differ from that sent in any previous response for the same
+  variant
+</code></pre><p>If the conditional GET used a strong cache validator (see section 13.3.3), the response SHOULD NOT include other entity-headers. Otherwise (i.e., the conditional GET used a weak validator), the response MUST NOT include other entity-headers; this prevents inconsistencies between cached entity-bodies and updated headers.</p>
+<p>If a 304 response indicates an entity not currently cached, then the cache MUST disregard the response and repeat the request without the conditional.</p>
+<p>If a cache uses a received 304 response to update a cache entry, the cache MUST update the entry to reflect any new field values given in the response.</p>
+<h2 id="305-Use-Proxy"><a href="#305-Use-Proxy" class="headerlink" title="305 Use Proxy"></a>305 Use Proxy</h2><p>The requested resource MUST be accessed through the proxy given by the Location field. The Location field gives the URI of the proxy. The recipient is expected to repeat this single request via the proxy. 305 responses MUST only be generated by origin servers.</p>
+<pre><code>Note: RFC 2068 was not clear that 305 was intended to redirect a
+single request, and to be generated by origin servers only.  Not
+observing these limitations has significant security consequences.
+</code></pre><h2 id="306-Unused"><a href="#306-Unused" class="headerlink" title="306 (Unused)"></a>306 (Unused)</h2><p>The 306 status code was used in a previous version of the specification, is no longer used, and the code is reserved.</p>
+<h2 id="307-Temporary-Redirect"><a href="#307-Temporary-Redirect" class="headerlink" title="307 Temporary Redirect"></a>307 Temporary Redirect</h2><p>The requested resource resides temporarily under a different URI. Since the redirection MAY be altered on occasion, the client SHOULD continue to use the Request-URI for future requests. This response is only cacheable if indicated by a Cache-Control or Expires header field.</p>
+<p>The temporary URI SHOULD be given by the Location field in the response. Unless the request method was HEAD, the entity of the response SHOULD contain a short hypertext note with a hyperlink to the new URI(s) , since many pre-HTTP/1.1 user agents do not understand the 307 status. Therefore, the note SHOULD contain the information necessary for a user to repeat the original request on the new URI.</p>
+<p>If the 307 status code is received in response to a request other than GET or HEAD, the user agent MUST NOT automatically redirect the request unless it can be confirmed by the user, since this might change the conditions under which the request was issued.</p>
+<h1 id="Client-Error-4xx"><a href="#Client-Error-4xx" class="headerlink" title="Client Error 4xx"></a>Client Error 4xx</h1><p>The 4xx class of status code is intended for cases in which the client seems to have erred. Except when responding to a HEAD request, the server SHOULD include an entity containing an explanation of the error situation, and whether it is a temporary or permanent condition. These status codes are applicable to any request method. User agents SHOULD display any included entity to the user.</p>
+<p>If the client is sending data, a server implementation using TCP SHOULD be careful to ensure that the client acknowledges receipt of the packet(s) containing the response, before the server closes the input connection. If the client continues sending data to the server after the close, the server’s TCP stack will send a reset packet to the client, which may erase the client’s unacknowledged input buffers before they can be read and interpreted by the HTTP application.</p>
+<h2 id="400-Bad-Request"><a href="#400-Bad-Request" class="headerlink" title="400 Bad Request"></a>400 Bad Request</h2><p>The request could not be understood by the server due to malformed syntax. The client SHOULD NOT repeat the request without modifications.</p>
+<h2 id="401-Unauthorized"><a href="#401-Unauthorized" class="headerlink" title="401 Unauthorized"></a>401 Unauthorized</h2><p>The request requires user authentication. The response MUST include a WWW-Authenticate header field (section 14.47) containing a challenge applicable to the requested resource. The client MAY repeat the request with a suitable Authorization header field (section 14.8). If the request already included Authorization credentials, then the 401 response indicates that authorization has been refused for those credentials. If the 401 response contains the same challenge as the prior response, and the user agent has already attempted authentication at least once, then the user SHOULD be presented the entity that was given in the response, since that entity might include relevant diagnostic information. HTTP access authentication is explained in “HTTP Authentication: Basic and Digest Access Authentication” [43].</p>
+<h2 id="402-Payment-Required"><a href="#402-Payment-Required" class="headerlink" title="402 Payment Required"></a>402 Payment Required</h2><p>This code is reserved for future use.</p>
+<h2 id="403-Forbidden"><a href="#403-Forbidden" class="headerlink" title="403 Forbidden"></a>403 Forbidden</h2><p>The server understood the request, but is refusing to fulfill it. Authorization will not help and the request SHOULD NOT be repeated. If the request method was not HEAD and the server wishes to make public why the request has not been fulfilled, it SHOULD describe the reason for the refusal in the entity. If the server does not wish to make this information available to the client, the status code 404 (Not Found) can be used instead.</p>
+<h2 id="404-Not-Found"><a href="#404-Not-Found" class="headerlink" title="404 Not Found"></a>404 Not Found</h2><p>The server has not found anything matching the Request-URI. No indication is given of whether the condition is temporary or permanent. The 410 (Gone) status code SHOULD be used if the server knows, through some internally configurable mechanism, that an old resource is permanently unavailable and has no forwarding address. This status code is commonly used when the server does not wish to reveal exactly why the request has been refused, or when no other response is applicable.</p>
+<h2 id="405-Method-Not-Allowed"><a href="#405-Method-Not-Allowed" class="headerlink" title="405 Method Not Allowed"></a>405 Method Not Allowed</h2><p>The method specified in the Request-Line is not allowed for the resource identified by the Request-URI. The response MUST include an Allow header containing a list of valid methods for the requested resource.</p>
+<h2 id="406-Not-Acceptable"><a href="#406-Not-Acceptable" class="headerlink" title="406 Not Acceptable"></a>406 Not Acceptable</h2><p>The resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to the accept headers sent in the request.</p>
+<p>Unless it was a HEAD request, the response SHOULD include an entity containing a list of available entity characteristics and location(s) from which the user or user agent can choose the one most appropriate. The entity format is specified by the media type given in the Content-Type header field. Depending upon the format and the capabilities of the user agent, selection of the most appropriate choice MAY be performed automatically. However, this specification does not define any standard for such automatic selection.</p>
+<pre><code>Note: HTTP/1.1 servers are allowed to return responses which are
+not acceptable according to the accept headers sent in the
+request. In some cases, this may even be preferable to sending a
+406 response. User agents are encouraged to inspect the headers of
+an incoming response to determine if it is acceptable.
+</code></pre><p>If the response could be unacceptable, a user agent SHOULD temporarily stop receipt of more data and query the user for a decision on further actions.</p>
+<h2 id="407-Proxy-Authentication-Required"><a href="#407-Proxy-Authentication-Required" class="headerlink" title="407 Proxy Authentication Required"></a>407 Proxy Authentication Required</h2><p>This code is similar to 401 (Unauthorized), but indicates that the client must first authenticate itself with the proxy. The proxy MUST return a Proxy-Authenticate header field (section 14.33) containing a challenge applicable to the proxy for the requested resource. The client MAY repeat the request with a suitable Proxy-Authorization header field (section 14.34). HTTP access authentication is explained in “HTTP Authentication: Basic and Digest Access Authentication” [43].</p>
+<h2 id="408-Request-Timeout"><a href="#408-Request-Timeout" class="headerlink" title="408 Request Timeout"></a>408 Request Timeout</h2><p>The client did not produce a request within the time that the server was prepared to wait. The client MAY repeat the request without modifications at any later time.</p>
+<h2 id="409-Conflict"><a href="#409-Conflict" class="headerlink" title="409 Conflict"></a>409 Conflict</h2><p>The request could not be completed due to a conflict with the current state of the resource. This code is only allowed in situations where it is expected that the user might be able to resolve the conflict and resubmit the request. The response body SHOULD include enough</p>
+<p>information for the user to recognize the source of the conflict. Ideally, the response entity would include enough information for the user or user agent to fix the problem; however, that might not be possible and is not required.</p>
+<p>Conflicts are most likely to occur in response to a PUT request. For example, if versioning were being used and the entity being PUT included changes to a resource which conflict with those made by an earlier (third-party) request, the server might use the 409 response to indicate that it can’t complete the request. In this case, the response entity would likely contain a list of the differences between the two versions in a format defined by the response Content-Type.</p>
+<h2 id="410-Gone"><a href="#410-Gone" class="headerlink" title="410 Gone"></a>410 Gone</h2><p>The requested resource is no longer available at the server and no forwarding address is known. This condition is expected to be considered permanent. Clients with link editing capabilities SHOULD delete references to the Request-URI after user approval. If the server does not know, or has no facility to determine, whether or not the condition is permanent, the status code 404 (Not Found) SHOULD be used instead. This response is cacheable unless indicated otherwise.</p>
+<p>The 410 response is primarily intended to assist the task of web maintenance by notifying the recipient that the resource is intentionally unavailable and that the server owners desire that remote links to that resource be removed. Such an event is common for limited-time, promotional services and for resources belonging to individuals no longer working at the server’s site. It is not necessary to mark all permanently unavailable resources as “gone” or to keep the mark for any length of time – that is left to the discretion of the server owner.</p>
+<h2 id="411-Length-Required"><a href="#411-Length-Required" class="headerlink" title="411 Length Required"></a>411 Length Required</h2><p>The server refuses to accept the request without a defined Content- Length. The client MAY repeat the request if it adds a valid Content-Length header field containing the length of the message-body in the request message.</p>
+<h2 id="412-Precondition-Failed"><a href="#412-Precondition-Failed" class="headerlink" title="412 Precondition Failed"></a>412 Precondition Failed</h2><p>The precondition given in one or more of the request-header fields evaluated to false when it was tested on the server. This response code allows the client to place preconditions on the current resource metainformation (header field data) and thus prevent the requested method from being applied to a resource other than the one intended.</p>
+<h2 id="413-Request-Entity-Too-Large"><a href="#413-Request-Entity-Too-Large" class="headerlink" title="413 Request Entity Too Large"></a>413 Request Entity Too Large</h2><p>The server is refusing to process a request because the request entity is larger than the server is willing or able to process. The server MAY close the connection to prevent the client from continuing the request.</p>
+<p>If the condition is temporary, the server SHOULD include a Retry- After header field to indicate that it is temporary and after what time the client MAY try again.</p>
+<h2 id="414-Request-URI-Too-Long"><a href="#414-Request-URI-Too-Long" class="headerlink" title="414 Request-URI Too Long"></a>414 Request-URI Too Long</h2><p>The server is refusing to service the request because the Request-URI is longer than the server is willing to interpret. This rare condition is only likely to occur when a client has improperly converted a POST request to a GET request with long query information, when the client has descended into a URI “black hole” of redirection (e.g., a redirected URI prefix that points to a suffix of itself), or when the server is under attack by a client attempting to exploit security holes present in some servers using fixed-length buffers for reading or manipulating the Request-URI.</p>
+<h2 id="415-Unsupported-Media-Type"><a href="#415-Unsupported-Media-Type" class="headerlink" title="415 Unsupported Media Type"></a>415 Unsupported Media Type</h2><p>The server is refusing to service the request because the entity of the request is in a format not supported by the requested resource for the requested method.</p>
+<h2 id="416-Requested-Range-Not-Satisfiable"><a href="#416-Requested-Range-Not-Satisfiable" class="headerlink" title="416 Requested Range Not Satisfiable"></a>416 Requested Range Not Satisfiable</h2><p>A server SHOULD return a response with this status code if a request included a Range request-header field (section 14.35), and none of the range-specifier values in this field overlap the current extent of the selected resource, and the request did not include an If-Range request-header field. (For byte-ranges, this means that the first- byte-pos of all of the byte-range-spec values were greater than the current length of the selected resource.)</p>
+<p>When this status code is returned for a byte-range request, the response SHOULD include a Content-Range entity-header field specifying the current length of the selected resource (see section 14.16). This response MUST NOT use the multipart/byteranges content- type.</p>
+<h2 id="417-Expectation-Failed"><a href="#417-Expectation-Failed" class="headerlink" title="417 Expectation Failed"></a>417 Expectation Failed</h2><p>The expectation given in an Expect request-header field (see section 14.20) could not be met by this server, or, if the server is a proxy, the server has unambiguous evidence that the request could not be met by the next-hop server.</p>
+<h1 id="Server-Error-5xx"><a href="#Server-Error-5xx" class="headerlink" title="Server Error 5xx"></a>Server Error 5xx</h1><p>Response status codes beginning with the digit “5” indicate cases in which the server is aware that it has erred or is incapable of performing the request. Except when responding to a HEAD request, the server SHOULD include an entity containing an explanation of the error situation, and whether it is a temporary or permanent condition. User agents SHOULD display any included entity to the user. These response codes are applicable to any request method.</p>
+<h2 id="500-Internal-Server-Error"><a href="#500-Internal-Server-Error" class="headerlink" title="500 Internal Server Error"></a>500 Internal Server Error</h2><p>The server encountered an unexpected condition which prevented it from fulfilling the request.</p>
+<h2 id="501-Not-Implemented"><a href="#501-Not-Implemented" class="headerlink" title="501 Not Implemented"></a>501 Not Implemented</h2><p>The server does not support the functionality required to fulfill the request. This is the appropriate response when the server does not recognize the request method and is not capable of supporting it for any resource.</p>
+<h2 id="502-Bad-Gateway"><a href="#502-Bad-Gateway" class="headerlink" title="502 Bad Gateway"></a>502 Bad Gateway</h2><p>The server, while acting as a gateway or proxy, received an invalid response from the upstream server it accessed in attempting to fulfill the request.</p>
+<h2 id="503-Service-Unavailable"><a href="#503-Service-Unavailable" class="headerlink" title="503 Service Unavailable"></a>503 Service Unavailable</h2><p>The server is currently unable to handle the request due to a temporary overloading or maintenance of the server. The implication is that this is a temporary condition which will be alleviated after some delay. If known, the length of the delay MAY be indicated in a Retry-After header. If no Retry-After is given, the client SHOULD handle the response as it would for a 500 response.</p>
+<pre><code>Note: The existence of the 503 status code does not imply that a
+server must use it when becoming overloaded. Some servers may wish
+to simply refuse the connection.
+</code></pre><h2 id="504-Gateway-Timeout"><a href="#504-Gateway-Timeout" class="headerlink" title="504 Gateway Timeout"></a>504 Gateway Timeout</h2><p>The server, while acting as a gateway or proxy, did not receive a timely response from the upstream server specified by the URI (e.g. HTTP, FTP, LDAP) or some other auxiliary server (e.g. DNS) it needed to access in attempting to complete the request.</p>
+<pre><code>Note: Note to implementors: some deployed proxies are known to
+return 400 or 500 when DNS lookups time out.
+</code></pre><h2 id="505-HTTP-Version-Not-Supported"><a href="#505-HTTP-Version-Not-Supported" class="headerlink" title="505 HTTP Version Not Supported"></a>505 HTTP Version Not Supported</h2><p>The server does not support, or refuses to support, the HTTP protocol version that was used in the request message. The server is indicating that it is unable or unwilling to complete the request using the same major version as the client, as described in section 3.1, other than with this error message. The response SHOULD contain an entity describing why that version is not supported and what other protocols are supported by that server.</p>
+
+                <div class="alert alert-success">
+                        <i class="fa fa-lightbulb-o"></i>本文由 <a href="https://qianxunclub.com">千寻啊千寻</a>创作。可自由转载、引用，但需署名作者且注明文章出处。
+                </div>
+
+                
+                
+                    <section class="reward">
+                        <!-- Donate Module -->
+<div id="donate_module">
+    <style type="text/css">
+        .hidden {
+            display: none;
+        }
+        .donate_bar a.btn_donate {
+            display: inline-block;
+            width: 82px;
+            height: 82px;
+            background: url("http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif") no-repeat;
+            _background: url("http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif") no-repeat;
+
+            -webkit-transition: background 0s;
+            -moz-transition: background 0s;
+            -o-transition: background 0s;
+            -ms-transition: background 0s;
+            transition: background 0s;
+        }
+        .donate_bar a.btn_donate:hover {
+            background-position: 0 -82px;
+        }
+        .donate_bar .donate_txt {
+            display: block;
+            color: #9d9d9d;
+            font: 14px/2 "Microsoft Yahei";
+        }
+        .bold {
+            font-weight: bold;
+        }
+
+        img.qrcode {
+            width: 90%;
+            margin-bottom: 10px;
+        }
+        @media only screen and (min-width: 1025px) {
+            img.qrcode {
+                width: 40%;
+                margin-right: 10px;
+            }
+        }
+
+    </style>
+
+    <!-- btn_donate & tips -->
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" target="_self" href="javascript:;" title="Donate 打赏"></a>
+        <span class="donate_txt">能看到这的都是真爱，打个赏呗=。=</span>
+    </div>
+    <!-- /btn_donate & tips -->
+
+    <!-- donate guide -->
+    <div id="donate_guide" class="donate_bar center hidden">
+        
+        <img class="qrcode" src="https://cdn.qianxunclub.com/weixinzhifu.jpg" title="打赏"/>
+        
+        <img class="qrcode" src="https://cdn.qianxunclub.com/zhifubaozhifu.jpg" title="打赏"/>
+        
+    </div>
+    <!-- /donate guide -->
+
+    <!-- donate script -->
+    <script type="text/javascript">
+        document.getElementById('btn_donate').onclick = function() {
+            $('#donate_board').addClass('hidden');
+            $('#donate_guide').removeClass('hidden');
+        }
+
+        function donate_on_web() {
+            $('#donate').submit();
+        }
+    </script>
+    <!-- /donate script -->
+</div>
+<!-- /Donate Module -->
+
+                    </section>
+                
+                <hr size="1"/>
+                <br/>
+                
+<p class="pink-link-context">
+    <a href="/video/zhe-ge-shi-jie-zong-you-ren-tou-tou-ai-zhao-ni/" rel="next" title="这个世界，总有人偷偷爱着你">
+    上一篇：这个世界，总有人偷偷爱着你
+  </a>
+</p>
+
+
+
+<p class="pink-link-context">
+    <a href="/java/spring-boot/springbootshi-yong-hibernate-validatorli-yong-aop/" rel="next" title="SpringBoot使用hibernate-validator利用AOP实现统一参数校验">
+    下一篇：SpringBoot使用hibernate-validator利用AOP实现统一参数校验
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+
+    <div id="SOHUCS" sid="tech/httqing-qiu-fan-hui-bian-ma-da-quan-yi-ji-jie-shi-fen-lei/" ></div> 
+    <script type="text/javascript"> 
+    (function(){ 
+    var appid = "cysusDfMu"; 
+    var conf = 'prod_b69f2ef223aee522c55cdfb59eb9a463'; 
+    var width = window.innerWidth || document.documentElement.clientWidth; 
+    if (width < 960) { 
+    window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+ 
+
+
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large pink">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="菜单"><i class="fa fa-navicon"></i></a></li>
+    </ul>
+  </div>
+
+    </main>
+    <footer class="page-footer indigo darken-1">
+    
+    <div class="footer-container container">
+        <div class="row">
+            
+            <div class="social-group col m4 s12">
+                <h5 class="white-text">社交</h5>
+                
+                    <a class="social-link" href="tencent://message/?uin=960339491&amp;Site=&amp;Menu=yes" target="_blank">
+                        <i class="fa fa-2x fa-qq"></i>
+                    </a>
+                
+                    <a class="social-link" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=nqeorq2tp6qnr97v77D98fM" target="_blank">
+                        <i class="fa fa-2x fa-send"></i>
+                    </a>
+                
+                    <a class="social-link" href="https://gitee.com/qianxunclub" target="_blank">
+                        <i class="fa fa-2x fa-gg"></i>
+                    </a>
+                
+                    <a class="social-link" href="/atom.xml" target="_blank">
+                        <i class="fa fa-2x fa-rss"></i>
+                    </a>
+                
+                
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+    </script>
+    <div class="site-visitors-container white-text">
+        <span>
+            <i class="fa fa-user"></i>
+            <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+        </span>
+        <span>&nbsp;|&nbsp;</span>
+        <span>
+            <i class="fa fa-eye"></i>
+            <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+        </span>
+    </div>
+
+
+            </div>
+            
+
+            
+            <div class="col m8 s12">
+                <h5 class="white-text">友情链接</h5>
+                
+                    <a class="social-link" href="https://blog.csdn.net/z960339491" target="_blank">CSDN</a>
+                
+                    <a class="social-link" href="https://gitee.com/qianxunclub" target="_blank">我的码云</a>
+                
+                    <a class="social-link" href="http://qianxunclub.com/" target="_blank">千寻啊千寻</a>
+                
+                    <a class="social-link" href="http://cuiqingcai.com/" target="_blank">静觅</a>
+                
+                    <a class="social-link" href="https://luna.fancylog.net/" target="_blank">Ｌunａ</a>
+                
+                    <a class="social-link" href="https://www.iots.vip/" target="_blank">Alliot&#39;s blog</a>
+                
+                    <a class="social-link" href="https://lilyssh.github.io/" target="_blank">lilyssh</a>
+                
+                    <a class="social-link" href="https://blog.mythsman.com/" target="_blank">Myths</a>
+                
+                    <a class="social-link" href="http://www.bluestep.cc/" target="_blank">蓝文资源库</a>
+                
+                    <a class="social-link" href="http://www.zhoujunwen.com/" target="_blank">虚怀若谷</a>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="footer-copyright pink-link-context">
+        <div class="container">
+            粤ICP备16022296号 © 2015-2018 qianxunclub.com, All rights reserved.
+            <!-- <p class="right" style="margin-top: 0;">本博客由 <a href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p> -->
+            <p class="right" style="margin-top: 0;"></p>
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+
+            // 目录随屏幕滚动（防止目录过长越过footer）
+            var $toc = $('.toc');
+            var scrollTargetTop = 0;
+            $(window).scroll(function() {
+                var $activeLink = $toc.find('a.active.section');
+                if ($(window).scrollTop() < 100) {
+                    scrollTargetTop = 0;
+                } else {
+                    if ($activeLink[0]) {
+                        scrollTargetTop = $activeLink.offset().top - $toc.offset().top;
+                    }
+                }
+                $toc.css('top', '-' + scrollTargetTop + 'px');
+            });
+
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('pink lighten-2');
+
+            
+            // 添加new标签
+            $('.menu-search').append('<span class="new badge pink"></span>');
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "search.xml";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
+
+
+<script src="/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121109140-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121109140-1');
+</script>
+
+
+
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=57056272" charset="UTF-8"></script>
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?3b92a7069a5181654fa7bf4e9b674c87";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>        
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+</body>
+</html>

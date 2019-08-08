@@ -1,0 +1,869 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title>SpringBoot实现12306自动抢票系统 | 千寻啊千寻</title>
+    <meta name="author" content="千寻啊千寻">
+    
+    <meta name="description" content="一个苦逼的程序员,主攻JAVA,略懂前端,本博客做知识记录分享使用!">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="SpringBoot实现12306自动抢票系统"/>
+    <meta property="og:site_name" content="千寻啊千寻"/>
+
+    
+    <meta property="og:image" content=""/>
+    
+
+    
+    <meta name="baidu_union_verify" content="2a4275babd8ed916b14303755ff57f85" />
+    
+
+    
+    <meta name="baidu-site-verification" content="4tmJOCtpEA" />
+    
+
+    
+    <meta name="google-site-verification" content="zAi4cnmJb1lWLYDL64ZMF9s3-Nuqw2DKLY7fDnCOCLs" />
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="千寻啊千寻" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/css/lib/prettify-tomorrow-night-eighties.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+<body>
+    <nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">千寻啊千寻</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            分类
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class=" " href="/tags" >
+                            <i class="fa fa-tags "></i>
+                            
+                            标签
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/saidlist" >
+                            <i class="fa fa-book "></i>
+                            
+                            留言
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            关于
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            搜索
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav indigo darken-1" id="main-menu">
+        
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4 no-padding">
+                    <img class="avatar-image circle responsive-img" src="https://cdn.qianxunclub.com/head.png" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper no-padding">
+                    <div class="valign">
+                        <p class="name">千寻啊千寻</p>
+                        <p class="desc">JAVA/架构/开发</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    分类
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect  " href="/tags" >
+                    <i class="fa fa-tags "></i>
+                    
+                    标签
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/saidlist" >
+                    <i class="fa fa-book "></i>
+                    
+                    留言
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    关于
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    搜索
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav indigo darken-1" id="category-menu">
+    
+
+            
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/异常记录/">
+                    异常记录 <span class="right">6 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Linux/">
+                    Linux <span class="right">5 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/其他/">
+                    其他 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/技术杂文/">
+                    技术杂文 <span class="right">7 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/视频/">
+                    视频 <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/缓存技术/">
+                    缓存技术 <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Java/">
+                    Java <span class="right">6 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Java/SpringBoot/">
+                    SpringBoot <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Java/Maven/">
+                    Maven <span class="right">2 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Java/SpringCloud/">
+                    SpringCloud <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">搜索</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        <div class="container main-container">
+    
+<nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper indigo">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+    
+    
+    <a class="breadcrumb" href="/categories/Java/">Java</a><a class="breadcrumb" href="/categories/Java/SpringBoot/">SpringBoot</a>
+
+
+        
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>SpringBoot实现12306自动抢票系统</h1>
+    
+
+
+            </div>
+            <time class="pink-link-context" datetime="2019-06-12T03:22:12.000Z"><a href="/java/spring-boot/springboot-shixian-12306-qiangpiao/">2019-06-12</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+    <div class="tags-row">
+        
+            <a href="/tags/SpringBoot/" class="chip pink lighten-1">SpringBoot</a>
+        
+            <a href="/tags/Java/" class="chip pink lighten-1">Java</a>
+        
+    </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#写在前面"><span class="section table-of-contents-text">写在前面</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#如何分析12306接口"><span class="section table-of-contents-text">如何分析12306接口</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#必要的接口"><span class="section table-of-contents-text">必要的接口</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#1-获取站点信息"><span class="section table-of-contents-text">1.获取站点信息</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#2-获取cookies"><span class="section table-of-contents-text">2.获取cookies</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#3-车票查询"><span class="section table-of-contents-text">3.车票查询</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#4-登录配置查询"><span class="section table-of-contents-text">4.登录配置查询</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#5-读取验证码"><span class="section table-of-contents-text">5.读取验证码</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#6-校验验证码"><span class="section table-of-contents-text">6.校验验证码</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#7-登录"><span class="section table-of-contents-text">7.登录</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#8-校验是否登录成功"><span class="section table-of-contents-text">8.校验是否登录成功</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#9-获取uamtk"><span class="section table-of-contents-text">9.获取uamtk</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#10-获取当前登录的tk"><span class="section table-of-contents-text">10.获取当前登录的tk</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#11-买票前校验用户是否正常登录"><span class="section table-of-contents-text">11.买票前校验用户是否正常登录</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#12-点击预定按钮"><span class="section table-of-contents-text">12.点击预定按钮</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#13-获取两个token"><span class="section table-of-contents-text">13.获取两个token</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#14-获取乘客信息"><span class="section table-of-contents-text">14.获取乘客信息</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#15-提交前检查订单"><span class="section table-of-contents-text">15.提交前检查订单</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#16-获取排队情况"><span class="section table-of-contents-text">16. 获取排队情况</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#17-提交订单"><span class="section table-of-contents-text">17.提交订单</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#18-获取订单"><span class="section table-of-contents-text">18.获取订单</span></a></li></ol></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#源代码"><span class="section table-of-contents-text">源代码</span></a></li></ol>
+</div>
+
+
+            
+            <div class="entry pink-link-context">
+                <h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>前段时间在浏览开源社区的时候，不小心看到一个 <code>12306抢票</code> 系统，一下就被吸引住了，然后就动力歪念头😏，过年终于不用找黄牛了，哇哈哈哈，写了差不多一个星期，终于可以全自动抢票了，中间遇到的坑也是挺多的，在这里分享一下，供大家参考学习。<br><a id="more"></a></p>
+<h1 id="如何分析12306接口"><a href="#如何分析12306接口" class="headerlink" title="如何分析12306接口"></a>如何分析12306接口</h1><p>使用 <code>Chrome</code> 或者 <code>Firefox</code> 浏览器，我这里用的是 <code>Firefox</code>，打开12306官网，然后打开开发者选项，点击<code>网络</code>选项卡，就可以观察到所有的请求接口情况了。<br>然后按照正常的流程，开始下单，没点击一部，然后看下面的控制台的请求情况，和分析接口的意义，这是一个很苦逼的过程😭。<br><img src="http://cdn.qianxunclub.com/blog/Qianxunclub2019-06-12_15-38-57.jpg" alt=""></p>
+<h1 id="必要的接口"><a href="#必要的接口" class="headerlink" title="必要的接口"></a>必要的接口</h1><p>我这了整理了一些必要的一些接口，也是按照购票顺序写的。</p>
+<h3 id="1-获取站点信息"><a href="#1-获取站点信息" class="headerlink" title="1.获取站点信息"></a>1.获取站点信息</h3><p>购票一部分站点参数使用的是编码，并不是汉字，需要使用这个接口获取对应的值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/https://kyfw.12306.cn/otn/resources/js/framework/station_name.js?station_version=1.9098</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-获取cookies"><a href="#2-获取cookies" class="headerlink" title="2.获取cookies"></a>2.获取cookies</h3><p>这个是为了获取必要的两个 cookie 的值的：<code>RAIL_EXPIRATION</code> 和 <code>RAIL_EXPIRATION</code>。</p>
+<blockquote>
+<p>这个接口就比较吊了，有特么好神奇，至今没搞懂后面的参数哪里来的，目前的是这俩 cookie 都是手动写死的，等研究出来，补充一下。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://kyfw.12306.cn/otn/HttpZF/logdevice?algID=&amp;hashCode=Ja4gW6Upz9XdOiA2-UBi5DjyNsB3Fmf3L0wxipiFro4&amp;FMQw=0&amp;q4f3=zh-CN&amp;VySQ=FGEYxQuwmyAY0Gevguxv6Ch8vDiXELlH&amp;VPIf=1&amp;custID=133&amp;VEek=unspecified&amp;dzuS=32.0%20r0&amp;yD16=0&amp;EOQP=c227b88b01f5c513710d4b9f16a5ce52&amp;lEnu=2886729839&amp;jp76=b34839808806e7ff02df813671ec99b3&amp;hAqN=MacIntel&amp;platform=WEB&amp;ks0Q=a103db222cd8296a50268c8f0355b741&amp;TeRS=877x1440&amp;tOHY=24xx900x1440&amp;Fvje=i1l1s1&amp;q5aJ=-8&amp;wNLf=99115dfb07133750ba677d055874de87&amp;0aew=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010.14;%20rv:67.0)%20Gecko/20100101%20Firefox/67.0&amp;E3gR=6c9c3674a3e453e368c3a0cc46f30eb8&amp;timestamp=1560399328000</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h3 id="3-车票查询"><a href="#3-车票查询" class="headerlink" title="3.车票查询"></a>3.车票查询</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://kyfw.12306.cn/otn/leftTicket/query?leftTicketDTO.train_date=%s&amp;leftTicketDTO.from_station=%s&amp;leftTicketDTO.to_station=%s&amp;purpose_codes=ADULT</span><br></pre></td></tr></table></figure>
+<h3 id="4-登录配置查询"><a href="#4-登录配置查询" class="headerlink" title="4.登录配置查询"></a>4.登录配置查询</h3><p>这个接口就是为了查看登录是否需要验证码的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://kyfw.12306.cn/otn/login/conf</span><br></pre></td></tr></table></figure></p>
+<h3 id="5-读取验证码"><a href="#5-读取验证码" class="headerlink" title="5.读取验证码"></a>5.读取验证码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://kyfw.12306.cn/passport/captcha/captcha-image64?login_site=E&amp;module=login&amp;rand=sjrand&amp;_=%s</span><br></pre></td></tr></table></figure>
+<h3 id="6-校验验证码"><a href="#6-校验验证码" class="headerlink" title="6.校验验证码"></a>6.校验验证码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://kyfw.12306.cn/passport/captcha/captcha-check?answer=%s&amp;rand=sjrand&amp;login_site=E&amp;_=%s</span><br></pre></td></tr></table></figure>
+<h3 id="7-登录"><a href="#7-登录" class="headerlink" title="7.登录"></a>7.登录</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://kyfw.12306.cn/passport/web/login</span><br></pre></td></tr></table></figure>
+<h3 id="8-校验是否登录成功"><a href="#8-校验是否登录成功" class="headerlink" title="8.校验是否登录成功"></a>8.校验是否登录成功</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://kyfw.12306.cn/passport/web/auth/uamtk-static?appid=otn</span><br></pre></td></tr></table></figure>
+<h3 id="9-获取uamtk"><a href="#9-获取uamtk" class="headerlink" title="9.获取uamtk"></a>9.获取<code>uamtk</code></h3><p>获取这个东西是为了后面获取用户 <code>tk</code> 做准备的。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://kyfw.12306.cn/passport/web/auth/uamtk</span><br></pre></td></tr></table></figure></p>
+<h3 id="10-获取当前登录的tk"><a href="#10-获取当前登录的tk" class="headerlink" title="10.获取当前登录的tk"></a>10.获取当前登录的<code>tk</code></h3><p>这东西后面买票是必须使用的。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://kyfw.12306.cn/otn/uamauthclient</span><br></pre></td></tr></table></figure></p>
+<h3 id="11-买票前校验用户是否正常登录"><a href="#11-买票前校验用户是否正常登录" class="headerlink" title="11.买票前校验用户是否正常登录"></a>11.买票前校验用户是否正常登录</h3><p>这个接口只是为了校验，没有实际意义。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://kyfw.12306.cn/otn/login/checkUser</span><br></pre></td></tr></table></figure></p>
+<h3 id="12-点击预定按钮"><a href="#12-点击预定按钮" class="headerlink" title="12.点击预定按钮"></a>12.点击预定按钮</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://kyfw.12306.cn/otn/leftTicket/submitOrderRequest</span><br></pre></td></tr></table></figure>
+<h3 id="13-获取两个token"><a href="#13-获取两个token" class="headerlink" title="13.获取两个token"></a>13.获取两个<code>token</code></h3><p>这个接口会获取两个 <code>token</code>。<br><code>globalRepeatSubmitToken</code>:获取乘客信息、检查订单、获取排队情况、提交订单使用。<br><code>key_check_isChange</code>:提交订单使用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://kyfw.12306.cn/otn/confirmPassenger/initDc</span><br></pre></td></tr></table></figure></p>
+<h3 id="14-获取乘客信息"><a href="#14-获取乘客信息" class="headerlink" title="14.获取乘客信息"></a>14.获取乘客信息</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://kyfw.12306.cn/otn/confirmPassenger/getPassengerDTOs</span><br></pre></td></tr></table></figure>
+<h3 id="15-提交前检查订单"><a href="#15-提交前检查订单" class="headerlink" title="15.提交前检查订单"></a>15.提交前检查订单</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://kyfw.12306.cn/otn/confirmPassenger/checkOrderInfo</span><br></pre></td></tr></table></figure>
+<h3 id="16-获取排队情况"><a href="#16-获取排队情况" class="headerlink" title="16. 获取排队情况"></a>16. 获取排队情况</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://kyfw.12306.cn/otn/confirmPassenger/getQueueCount</span><br></pre></td></tr></table></figure>
+<h3 id="17-提交订单"><a href="#17-提交订单" class="headerlink" title="17.提交订单"></a>17.提交订单</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://kyfw.12306.cn/otn/confirmPassenger/confirmSingleForQueue</span><br></pre></td></tr></table></figure>
+<h3 id="18-获取订单"><a href="#18-获取订单" class="headerlink" title="18.获取订单"></a>18.获取订单</h3><p>这个获取订单接口必须成功，才能确定下单成功的。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://kyfw.12306.cn/otn/confirmPassenger/queryOrderWaitTime</span><br></pre></td></tr></table></figure></p>
+<h1 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h1><p><a href="https://gitee.com/qianxunclub/ticket" target="_blank" rel="noopener"><img src="https://gitee.com/qianxunclub/ticket/widgets/widget_6.svg" alt="Fork me on Gitee"></a></p>
+<p>因为代码有部分敏感信息，所以我这就重新打包上传到QQ群了。<br><code>加QQ群下载：852214454</code>  </p>
+
+                <div class="alert alert-success">
+                        <i class="fa fa-lightbulb-o"></i>本文由 <a href="https://qianxunclub.com">千寻啊千寻</a>创作。可自由转载、引用，但需署名作者且注明文章出处。
+                </div>
+
+                
+                
+                    <section class="reward">
+                        <!-- Donate Module -->
+<div id="donate_module">
+    <style type="text/css">
+        .hidden {
+            display: none;
+        }
+        .donate_bar a.btn_donate {
+            display: inline-block;
+            width: 82px;
+            height: 82px;
+            background: url("http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif") no-repeat;
+            _background: url("http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif") no-repeat;
+
+            -webkit-transition: background 0s;
+            -moz-transition: background 0s;
+            -o-transition: background 0s;
+            -ms-transition: background 0s;
+            transition: background 0s;
+        }
+        .donate_bar a.btn_donate:hover {
+            background-position: 0 -82px;
+        }
+        .donate_bar .donate_txt {
+            display: block;
+            color: #9d9d9d;
+            font: 14px/2 "Microsoft Yahei";
+        }
+        .bold {
+            font-weight: bold;
+        }
+
+        img.qrcode {
+            width: 90%;
+            margin-bottom: 10px;
+        }
+        @media only screen and (min-width: 1025px) {
+            img.qrcode {
+                width: 40%;
+                margin-right: 10px;
+            }
+        }
+
+    </style>
+
+    <!-- btn_donate & tips -->
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" target="_self" href="javascript:;" title="Donate 打赏"></a>
+        <span class="donate_txt">能看到这的都是真爱，打个赏呗=。=</span>
+    </div>
+    <!-- /btn_donate & tips -->
+
+    <!-- donate guide -->
+    <div id="donate_guide" class="donate_bar center hidden">
+        
+        <img class="qrcode" src="https://cdn.qianxunclub.com/weixinzhifu.jpg" title="打赏"/>
+        
+        <img class="qrcode" src="https://cdn.qianxunclub.com/zhifubaozhifu.jpg" title="打赏"/>
+        
+    </div>
+    <!-- /donate guide -->
+
+    <!-- donate script -->
+    <script type="text/javascript">
+        document.getElementById('btn_donate').onclick = function() {
+            $('#donate_board').addClass('hidden');
+            $('#donate_guide').removeClass('hidden');
+        }
+
+        function donate_on_web() {
+            $('#donate').submit();
+        }
+    </script>
+    <!-- /donate script -->
+</div>
+<!-- /Donate Module -->
+
+                    </section>
+                
+                <hr size="1"/>
+                <br/>
+                
+<p class="pink-link-context">
+    <a href="/linux/centos7-shengji-gcc/" rel="next" title="Centos7 手动编译升级 gcc">
+    上一篇：Centos7 手动编译升级 gcc
+  </a>
+</p>
+
+
+
+<p class="pink-link-context">
+    <a href="/linux/ansible-de-an-zhuang-he-shi-yong-ssh-pass/" rel="next" title="ansible的安装配置和配合sshpass的使用">
+    下一篇：ansible的安装配置和配合sshpass的使用
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+
+    <div id="SOHUCS" sid="java/spring-boot/springboot-shixian-12306-qiangpiao/" ></div> 
+    <script type="text/javascript"> 
+    (function(){ 
+    var appid = "cysusDfMu"; 
+    var conf = 'prod_b69f2ef223aee522c55cdfb59eb9a463'; 
+    var width = window.innerWidth || document.documentElement.clientWidth; 
+    if (width < 960) { 
+    window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+ 
+
+
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large pink">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="菜单"><i class="fa fa-navicon"></i></a></li>
+    </ul>
+  </div>
+
+    </main>
+    <footer class="page-footer indigo darken-1">
+    
+    <div class="footer-container container">
+        <div class="row">
+            
+            <div class="social-group col m4 s12">
+                <h5 class="white-text">社交</h5>
+                
+                    <a class="social-link" href="tencent://message/?uin=960339491&amp;Site=&amp;Menu=yes" target="_blank">
+                        <i class="fa fa-2x fa-qq"></i>
+                    </a>
+                
+                    <a class="social-link" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=nqeorq2tp6qnr97v77D98fM" target="_blank">
+                        <i class="fa fa-2x fa-send"></i>
+                    </a>
+                
+                    <a class="social-link" href="https://gitee.com/qianxunclub" target="_blank">
+                        <i class="fa fa-2x fa-gg"></i>
+                    </a>
+                
+                    <a class="social-link" href="/atom.xml" target="_blank">
+                        <i class="fa fa-2x fa-rss"></i>
+                    </a>
+                
+                
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+    </script>
+    <div class="site-visitors-container white-text">
+        <span>
+            <i class="fa fa-user"></i>
+            <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+        </span>
+        <span>&nbsp;|&nbsp;</span>
+        <span>
+            <i class="fa fa-eye"></i>
+            <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+        </span>
+    </div>
+
+
+            </div>
+            
+
+            
+            <div class="col m8 s12">
+                <h5 class="white-text">友情链接</h5>
+                
+                    <a class="social-link" href="https://blog.csdn.net/z960339491" target="_blank">CSDN</a>
+                
+                    <a class="social-link" href="https://gitee.com/qianxunclub" target="_blank">我的码云</a>
+                
+                    <a class="social-link" href="http://qianxunclub.com/" target="_blank">千寻啊千寻</a>
+                
+                    <a class="social-link" href="http://cuiqingcai.com/" target="_blank">静觅</a>
+                
+                    <a class="social-link" href="https://luna.fancylog.net/" target="_blank">Ｌunａ</a>
+                
+                    <a class="social-link" href="https://www.iots.vip/" target="_blank">Alliot&#39;s blog</a>
+                
+                    <a class="social-link" href="https://lilyssh.github.io/" target="_blank">lilyssh</a>
+                
+                    <a class="social-link" href="https://blog.mythsman.com/" target="_blank">Myths</a>
+                
+                    <a class="social-link" href="http://www.bluestep.cc/" target="_blank">蓝文资源库</a>
+                
+                    <a class="social-link" href="http://www.zhoujunwen.com/" target="_blank">虚怀若谷</a>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="footer-copyright pink-link-context">
+        <div class="container">
+            粤ICP备16022296号 © 2015-2018 qianxunclub.com, All rights reserved.
+            <!-- <p class="right" style="margin-top: 0;">本博客由 <a href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p> -->
+            <p class="right" style="margin-top: 0;"></p>
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+
+            // 目录随屏幕滚动（防止目录过长越过footer）
+            var $toc = $('.toc');
+            var scrollTargetTop = 0;
+            $(window).scroll(function() {
+                var $activeLink = $toc.find('a.active.section');
+                if ($(window).scrollTop() < 100) {
+                    scrollTargetTop = 0;
+                } else {
+                    if ($activeLink[0]) {
+                        scrollTargetTop = $activeLink.offset().top - $toc.offset().top;
+                    }
+                }
+                $toc.css('top', '-' + scrollTargetTop + 'px');
+            });
+
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('pink lighten-2');
+
+            
+            // 添加new标签
+            $('.menu-search').append('<span class="new badge pink"></span>');
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "search.xml";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
+
+
+<script src="/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121109140-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121109140-1');
+</script>
+
+
+
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=57056272" charset="UTF-8"></script>
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?3b92a7069a5181654fa7bf4e9b674c87";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>        
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+</body>
+</html>
