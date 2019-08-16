@@ -252,16 +252,16 @@
         
 
             <li class="collapse-level-1" collapse-level="1">
-                <a class="no-padding" href="/categories/Java/SpringBoot/">
-                    SpringBoot <span class="right">3 篇</span></a>
+                <a class="no-padding" href="/categories/Java/Maven/">
+                    Maven <span class="right">2 篇</span></a>
                 </a>
             </li>
 
         
 
             <li class="collapse-level-1" collapse-level="1">
-                <a class="no-padding" href="/categories/Java/Maven/">
-                    Maven <span class="right">2 篇</span></a>
+                <a class="no-padding" href="/categories/Java/SpringBoot/">
+                    SpringBoot <span class="right">3 篇</span></a>
                 </a>
             </li>
 
@@ -456,16 +456,16 @@
                 <br/>
                 
 <p class="pink-link-context">
-    <a href="/exception/springboot-elasticsearch-qi-dong-yi-chang/" rel="next" title="SpringBoot使用elasticsearch异常：NoSuchMethodError:org.jboss.netty.channel.socket.nio.NioWorker">
-    上一篇：SpringBoot使用elasticsearch异常：NoSuchMethodError:org.jboss.netty.channel.socket.nio.NioWorker
+    <a href="/linux/nginx-pei-zhi-nginx-conf-wen-jian/" rel="next" title="Nginx认识nginx.conf配置文件">
+    上一篇：Nginx认识nginx.conf配置文件
   </a>
 </p>
 
 
 
 <p class="pink-link-context">
-    <a href="/tech/elasticsearch-install/" rel="next" title="centos系统的elasticsearch安装">
-    下一篇：centos系统的elasticsearch安装
+    <a href="/exception/springboot-elasticsearch-qi-dong-yi-chang/" rel="next" title="SpringBoot使用elasticsearch异常：NoSuchMethodError:org.jboss.netty.channel.socket.nio.NioWorker">
+    下一篇：SpringBoot使用elasticsearch异常：NoSuchMethodError:org.jboss.netty.channel.socket.nio.NioWorker
   </a>
 </p>
 
@@ -640,7 +640,18 @@
 
             // 文章目录
             $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
-
+            // 目录滚动
+            $(window).scroll(function(){
+                var aTop = $('a.active.section');
+                if ($(window).scrollTop()<100) {
+                    Top=0;
+                }else {
+                    if (aTop[0]) {
+                        Top = aTop.offset().top-$('div.toc.hide-on-med-and-down').offset().top;
+                    }
+                }
+                $('div.toc.hide-on-med-and-down').css('top', '-' + Top + 'px');
+            });
             // 目录随屏幕滚动（防止目录过长越过footer）
             var $toc = $('.toc');
             var scrollTargetTop = 0;
