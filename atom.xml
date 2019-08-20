@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qianxunclub.com/"/>
-  <updated>2019-08-20T02:08:27.086Z</updated>
+  <updated>2019-08-20T02:23:30.869Z</updated>
   <id>https://qianxunclub.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>JAVA Bean 中的 VO、BO、DO、DTO</title>
-    <link href="https://qianxunclub.com/java/base/java-model-guifan/"/>
-    <id>https://qianxunclub.com/java/base/java-model-guifan/</id>
+    <title>JAVA Model 中的 VO、BO、DO、DTO</title>
+    <link href="https://qianxunclub.com/java/bean/java-model-guifan/"/>
+    <id>https://qianxunclub.com/java/bean/java-model-guifan/</id>
     <published>2019-08-19T18:41:37.000Z</published>
-    <updated>2019-08-20T02:08:27.086Z</updated>
+    <updated>2019-08-20T02:23:30.869Z</updated>
     
     <content type="html"><![CDATA[<ul><li>VO：VO（View Object） 通常是请求处理层传输的对象，它通过 Spring 框架的转换后，往往是一个 JSON 对象。<a id="more"></a></li><li>BO：BO（Business Object），它是业务逻辑层封装业务逻辑的对象，一般情况下，它是聚合了多个数据源的复合对象。</li><li>DO：DO（Data Object）与数据库表结构一一对应，通过 DAO 层向上传输数据源对象。</li><li>DTO：DTO（Data Transfer Object）是远程调用对象，它是 RPC 服务提供的领域模型。</li></ul>]]></content>
     
@@ -34,12 +34,8 @@
     
       <category term="Java" scheme="https://qianxunclub.com/categories/Java/"/>
     
-      <category term="Bean" scheme="https://qianxunclub.com/categories/Java/Bean/"/>
-    
     
       <category term="Java" scheme="https://qianxunclub.com/tags/Java/"/>
-    
-      <category term="Bean" scheme="https://qianxunclub.com/tags/Bean/"/>
     
   </entry>
   

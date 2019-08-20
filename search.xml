@@ -3,16 +3,14 @@
   
     
     <entry>
-      <title>JAVA Bean 中的 VO、BO、DO、DTO</title>
-      <link href="/java/base/java-model-guifan/"/>
-      <url>/java/base/java-model-guifan/</url>
+      <title>JAVA Model 中的 VO、BO、DO、DTO</title>
+      <link href="/java/bean/java-model-guifan/"/>
+      <url>/java/bean/java-model-guifan/</url>
       <content type="html"><![CDATA[<ul><li>VO：VO（View Object） 通常是请求处理层传输的对象，它通过 Spring 框架的转换后，往往是一个 JSON 对象。<a id="more"></a></li><li>BO：BO（Business Object），它是业务逻辑层封装业务逻辑的对象，一般情况下，它是聚合了多个数据源的复合对象。</li><li>DO：DO（Data Object）与数据库表结构一一对应，通过 DAO 层向上传输数据源对象。</li><li>DTO：DTO（Data Transfer Object）是远程调用对象，它是 RPC 服务提供的领域模型。</li></ul>]]></content>
       
       <categories>
           
           <category> Java </category>
-          
-          <category> Bean </category>
           
       </categories>
       
@@ -20,8 +18,6 @@
         <tags>
             
             <tag> Java </tag>
-            
-            <tag> Bean </tag>
             
         </tags>
       
@@ -562,29 +558,6 @@
     </entry>
     
     <entry>
-      <title>kafka发送消息问题，could not be resolved</title>
-      <link href="/exception/kafka-exception-could-not-be-resolved/"/>
-      <url>/exception/kafka-exception-could-not-be-resolved/</url>
-      <content type="html"><![CDATA[<h1 id="异常描述"><a href="#异常描述" class="headerlink" title="异常描述"></a>异常描述</h1><p>我用的阿里云服务器，我在服务器上面安装了一个kafka<br>为啥不能发送的，百度了好多 说啥DNS不对.</p><p><code>2016/09/18 11:11:46 [error] 5720#0: [lua] producer.lua:258: buffered messages send to kafka err: iz9405kumw9z could not be resolved (3: Host not found), retryable: true, topic: lualog, partition_id: 0, length: 1, context: ngx.timer, clie nt: 183.12.65.116, server: 0.0.0.0:80</code><br><a id="more"></a><br>kafka配置文件（config/server.properties）： </p><p><img src="http://img.ask.csdn.net/upload/201609/18/1474168727_238864.png" alt=""></p><p>nginx日志：<br><img src="http://img.ask.csdn.net/upload/201609/18/1474168585_423649.png" alt=""></p><h1 id="异常分析"><a href="#异常分析" class="headerlink" title="异常分析"></a>异常分析</h1><p>从异常看，很明显是HOST访问不了，于是乎，要从Kfka网络配置入手了。</p><h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p><img src="http://img.ask.csdn.net/upload/201609/18/1474186554_681266.png" alt=""></p><p>使用下面这个地址 我写的是内网IP地址，换成外网的就可以正常使用了！</p>]]></content>
-      
-      <categories>
-          
-          <category> 异常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Exception </tag>
-            
-            <tag> Kafka </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
       <title>缓存穿透，缓存击穿，缓存雪崩解决方案分析</title>
       <link href="/cache/huan-cun-chuan-tou-huan-cun-ji-chuan-huan-cun-xue-beng-jie-jue-fang-an-fen-xi/"/>
       <url>/cache/huan-cun-chuan-tou-huan-cun-ji-chuan-huan-cun-xue-beng-jie-jue-fang-an-fen-xi/</url>
@@ -602,6 +575,29 @@
             <tag> Redis </tag>
             
             <tag> 缓存 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>kafka发送消息问题，could not be resolved</title>
+      <link href="/exception/kafka-exception-could-not-be-resolved/"/>
+      <url>/exception/kafka-exception-could-not-be-resolved/</url>
+      <content type="html"><![CDATA[<h1 id="异常描述"><a href="#异常描述" class="headerlink" title="异常描述"></a>异常描述</h1><p>我用的阿里云服务器，我在服务器上面安装了一个kafka<br>为啥不能发送的，百度了好多 说啥DNS不对.</p><p><code>2016/09/18 11:11:46 [error] 5720#0: [lua] producer.lua:258: buffered messages send to kafka err: iz9405kumw9z could not be resolved (3: Host not found), retryable: true, topic: lualog, partition_id: 0, length: 1, context: ngx.timer, clie nt: 183.12.65.116, server: 0.0.0.0:80</code><br><a id="more"></a><br>kafka配置文件（config/server.properties）： </p><p><img src="http://img.ask.csdn.net/upload/201609/18/1474168727_238864.png" alt=""></p><p>nginx日志：<br><img src="http://img.ask.csdn.net/upload/201609/18/1474168585_423649.png" alt=""></p><h1 id="异常分析"><a href="#异常分析" class="headerlink" title="异常分析"></a>异常分析</h1><p>从异常看，很明显是HOST访问不了，于是乎，要从Kfka网络配置入手了。</p><h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p><img src="http://img.ask.csdn.net/upload/201609/18/1474186554_681266.png" alt=""></p><p>使用下面这个地址 我写的是内网IP地址，换成外网的就可以正常使用了！</p>]]></content>
+      
+      <categories>
+          
+          <category> 异常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Exception </tag>
+            
+            <tag> Kafka </tag>
             
         </tags>
       
@@ -701,17 +697,17 @@
   
     
     <entry>
-      <title>关于我</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<p><img src="http://cdn.qianxunclub.com/4f3ea7c53f5a491847890c19e3d7c.jpg" alt=""></p><ul><li>姓 名：张斌</li><li>昵 称：千寻啊千寻</li><li>职 业：蚂蚁金服一名老老实实的程序猿</li><li>Ｑ Ｑ：960339491</li><li>Email：<a href="mailto:960339491@qq.com" target="_blank" rel="noopener">960339491@qq.com</a></li><li>位 置：深圳</li><li>爱 好：那特么有时间去爱好啊，暂时爱好就是找媳妇，不过最近喜欢骑自行车、放风筝、逛公园和商场，还有一个LOL（巨龙之巢：千寻啊千寻）</li><li>生 日：1990年09月11日</li><li>性 格：我性格各种好啊，不打人不骂架、特别喜欢交朋友，特别是女的，哇哈哈哈</li></ul><h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p>我就一个山沟沟的一个小人物来大深圳打工的孩纸，其他的别着急，我还别编好，我编好了再来写，感觉这个好难写。<br>我还有一个好妹妹，是一个演员，有兴趣的可以看看她博客。<br><strong>最重要一点，我想要找女朋友啊！！！！</strong></p>]]></content>
-    </entry>
-    
-    <entry>
       <title>留言板</title>
       <link href="/saidlist/index.html"/>
       <url>/saidlist/index.html</url>
       <content type="html"><![CDATA[<p><strong>博客</strong>  </p><p>使用程序：Hexo  </p><p><strong>友情链接</strong>  </p><p>昵称：千寻啊千寻<br>网站：qianxunclub.com<br>描述：编程技术分享<br>LOGO：<br><code>https://cdn.qianxunclub.com/c20fa0d6431df54956f1b8db7d281.jpg</code>  </p><p>欢迎各位添加友情连接哇，有什么建议可以给我留言哦~</p>]]></content>
+    </entry>
+    
+    <entry>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<p><img src="http://cdn.qianxunclub.com/4f3ea7c53f5a491847890c19e3d7c.jpg" alt=""></p><ul><li>姓 名：张斌</li><li>昵 称：千寻啊千寻</li><li>职 业：蚂蚁金服一名老老实实的程序猿</li><li>Ｑ Ｑ：960339491</li><li>Email：<a href="mailto:960339491@qq.com" target="_blank" rel="noopener">960339491@qq.com</a></li><li>位 置：深圳</li><li>爱 好：那特么有时间去爱好啊，暂时爱好就是找媳妇，不过最近喜欢骑自行车、放风筝、逛公园和商场，还有一个LOL（巨龙之巢：千寻啊千寻）</li><li>生 日：1990年09月11日</li><li>性 格：我性格各种好啊，不打人不骂架、特别喜欢交朋友，特别是女的，哇哈哈哈</li></ul><h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p>我就一个山沟沟的一个小人物来大深圳打工的孩纸，其他的别着急，我还别编好，我编好了再来写，感觉这个好难写。<br>我还有一个好妹妹，是一个演员，有兴趣的可以看看她博客。<br><strong>最重要一点，我想要找女朋友啊！！！！</strong></p>]]></content>
     </entry>
     
     <entry>
