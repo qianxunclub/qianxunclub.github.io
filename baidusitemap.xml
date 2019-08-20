@@ -4,6 +4,31 @@
 
     
   <url>
+    <loc>https://qianxunclub.com/java/base/java-model-guifan/</loc>
+    <lastmod>2019-08-20T02:08:27.086Z</lastmod>
+    <data>
+        <display>
+        <title>JAVA Bean 中的 VO、BO、DO、DTO</title>
+        <pubTime>2019-08-19T18:41:37.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>Bean</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://qianxunclub.com/categories/Java/"/>
+          
+             
+              <breadCrumb title="Bean" url="https://qianxunclub.com/categories/Java/Bean/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://qianxunclub.com/linux/centos7-shengji-gcc/</loc>
     <lastmod>2019-08-08T10:25:41.299Z</lastmod>
     <data>
@@ -31,26 +56,6 @@
     
     
   <url>
-    <loc>https://qianxunclub.com/tech/httqing-qiu-fan-hui-bian-ma-da-quan-yi-ji-jie-shi-fen-lei/</loc>
-    <lastmod>2019-07-31T08:33:17.803Z</lastmod>
-    <data>
-        <display>
-        <title>HTTP请求返回编码大全以及解释分类</title>
-        <pubTime>2018-05-06T18:08:46.000Z</pubTime>
-        
-        <tag>Http</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术杂文" url="https://qianxunclub.com/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://qianxunclub.com/video/zhe-ge-shi-jie-zong-you-ren-tou-tou-ai-zhao-ni/</loc>
     <lastmod>2019-07-31T08:33:17.803Z</lastmod>
     <data>
@@ -73,38 +78,16 @@
 
     
   <url>
-    <loc>https://qianxunclub.com/video/my-father-is-liar/</loc>
+    <loc>https://qianxunclub.com/tech/gao-zhi-liang-mian-shi-ti/</loc>
     <lastmod>2019-07-31T08:33:17.803Z</lastmod>
     <data>
         <display>
-        <title>《我的爸爸是个骗子》风靡全球</title>
-        <pubTime>2016-11-27T16:00:00.000Z</pubTime>
+        <title>一份高质量的JAVA高级开发面试题总结，没有答案</title>
+        <pubTime>2018-10-20T01:05:00.000Z</pubTime>
         
-        <tag>视频</tag>
+        <tag>面试题</tag>
          
-        <tag>公益广告</tag>
-         
-         
-           
-             
-              <breadCrumb title="视频" url="https://qianxunclub.com/categories/%E8%A7%86%E9%A2%91/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://qianxunclub.com/tech/xing-yun-da-zhuan-pan-chou-jiang-cheng-xu-shi-xian-luo-ji/</loc>
-    <lastmod>2019-07-31T08:33:17.803Z</lastmod>
-    <data>
-        <display>
-        <title>幸运大转盘抽奖 抽奖算法 程序实现逻辑</title>
-        <pubTime>2016-10-25T16:00:00.000Z</pubTime>
-        
         <tag>Java</tag>
-         
-        <tag>抽奖</tag>
          
          
            
@@ -139,16 +122,16 @@
 
     
   <url>
-    <loc>https://qianxunclub.com/tech/gao-zhi-liang-mian-shi-ti/</loc>
+    <loc>https://qianxunclub.com/tech/xing-yun-da-zhuan-pan-chou-jiang-cheng-xu-shi-xian-luo-ji/</loc>
     <lastmod>2019-07-31T08:33:17.803Z</lastmod>
     <data>
         <display>
-        <title>一份高质量的JAVA高级开发面试题总结，没有答案</title>
-        <pubTime>2018-10-20T01:05:00.000Z</pubTime>
+        <title>幸运大转盘抽奖 抽奖算法 程序实现逻辑</title>
+        <pubTime>2016-10-25T16:00:00.000Z</pubTime>
         
-        <tag>面试题</tag>
-         
         <tag>Java</tag>
+         
+        <tag>抽奖</tag>
          
          
            
@@ -161,20 +144,36 @@
 
     
   <url>
-    <loc>https://qianxunclub.com/tech/apollo-pei-zhi-zhong-xin-an-zhuang-bu-shu/</loc>
-    <lastmod>2019-07-31T08:33:17.802Z</lastmod>
+    <loc>https://qianxunclub.com/video/my-father-is-liar/</loc>
+    <lastmod>2019-07-31T08:33:17.803Z</lastmod>
     <data>
         <display>
-        <title>Apollo分布式配置中心部署以及使用</title>
-        <pubTime>2018-06-12T03:18:00.000Z</pubTime>
+        <title>《我的爸爸是个骗子》风靡全球</title>
+        <pubTime>2016-11-27T16:00:00.000Z</pubTime>
         
-        <tag>SpringBoot</tag>
+        <tag>视频</tag>
          
-        <tag>Java</tag>
+        <tag>公益广告</tag>
          
-        <tag>分布式</tag>
          
-        <tag>SpringCloud</tag>
+           
+             
+              <breadCrumb title="视频" url="https://qianxunclub.com/categories/%E8%A7%86%E9%A2%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://qianxunclub.com/tech/httqing-qiu-fan-hui-bian-ma-da-quan-yi-ji-jie-shi-fen-lei/</loc>
+    <lastmod>2019-07-31T08:33:17.803Z</lastmod>
+    <data>
+        <display>
+        <title>HTTP请求返回编码大全以及解释分类</title>
+        <pubTime>2018-05-06T18:08:46.000Z</pubTime>
+        
+        <tag>Http</tag>
          
          
            
@@ -200,48 +199,6 @@
            
              
               <breadCrumb title="技术杂文" url="https://qianxunclub.com/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://qianxunclub.com/linux/zi-dong-hua-gong-ju-ansiblewan-zheng-an-zhuang-pi-liang-de-zai-yuan-cheng-fu-wu-qi-shang-zhi-xing-ming-ling/</loc>
-    <lastmod>2019-07-31T08:33:17.802Z</lastmod>
-    <data>
-        <display>
-        <title>自动化工具 ansible完整安装</title>
-        <pubTime>2016-11-15T16:00:00.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-         
-           
-             
-              <breadCrumb title="Linux" url="https://qianxunclub.com/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://qianxunclub.com/other/ni-ma-a-keng-die-de-peng-you-quan-qing-fang-guo-wo-ba-wo-ma-ba/</loc>
-    <lastmod>2019-07-31T08:33:17.802Z</lastmod>
-    <data>
-        <display>
-        <title>尼玛啊！坑爹的朋友圈！请放过我爸我妈吧！</title>
-        <pubTime>2017-01-11T16:00:00.000Z</pubTime>
-        
-        <tag>图片</tag>
-         
-        <tag>搞笑</tag>
-         
-         
-           
-             
-              <breadCrumb title="其他" url="https://qianxunclub.com/categories/%E5%85%B6%E4%BB%96/"/>
           
         </display>
     </data>
@@ -284,14 +241,106 @@
         
         <tag>SpringBoot</tag>
          
-        <tag>Linux</tag>
-         
         <tag>Elasticsearch</tag>
+         
+        <tag>Linux</tag>
          
          
            
              
               <breadCrumb title="技术杂文" url="https://qianxunclub.com/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://qianxunclub.com/other/ni-ma-a-keng-die-de-peng-you-quan-qing-fang-guo-wo-ba-wo-ma-ba/</loc>
+    <lastmod>2019-07-31T08:33:17.802Z</lastmod>
+    <data>
+        <display>
+        <title>尼玛啊！坑爹的朋友圈！请放过我爸我妈吧！</title>
+        <pubTime>2017-01-11T16:00:00.000Z</pubTime>
+        
+        <tag>图片</tag>
+         
+        <tag>搞笑</tag>
+         
+         
+           
+             
+              <breadCrumb title="其他" url="https://qianxunclub.com/categories/%E5%85%B6%E4%BB%96/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://qianxunclub.com/linux/zi-dong-hua-gong-ju-ansiblewan-zheng-an-zhuang-pi-liang-de-zai-yuan-cheng-fu-wu-qi-shang-zhi-xing-ming-ling/</loc>
+    <lastmod>2019-07-31T08:33:17.802Z</lastmod>
+    <data>
+        <display>
+        <title>自动化工具 ansible完整安装</title>
+        <pubTime>2016-11-15T16:00:00.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="Linux" url="https://qianxunclub.com/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://qianxunclub.com/tech/apollo-pei-zhi-zhong-xin-an-zhuang-bu-shu/</loc>
+    <lastmod>2019-07-31T08:33:17.802Z</lastmod>
+    <data>
+        <display>
+        <title>Apollo分布式配置中心部署以及使用</title>
+        <pubTime>2018-06-12T03:18:00.000Z</pubTime>
+        
+        <tag>SpringBoot</tag>
+         
+        <tag>Java</tag>
+         
+        <tag>分布式</tag>
+         
+        <tag>SpringCloud</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术杂文" url="https://qianxunclub.com/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://qianxunclub.com/linux/ansible-de-an-zhuang-he-shi-yong-ssh-pass/</loc>
+    <lastmod>2019-07-31T08:33:17.801Z</lastmod>
+    <data>
+        <display>
+        <title>ansible的安装配置和配合sshpass的使用</title>
+        <pubTime>2018-11-21T04:39:00.000Z</pubTime>
+        
+        <tag>Ansible</tag>
+         
+        <tag>Linux</tag>
+         
+        <tag>Mac</tag>
+         
+         
+           
+             
+              <breadCrumb title="Linux" url="https://qianxunclub.com/categories/Linux/"/>
           
         </display>
     </data>
@@ -317,28 +366,6 @@
           
              
               <breadCrumb title="SpringBoot" url="https://qianxunclub.com/categories/Java/SpringBoot/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://qianxunclub.com/linux/nginx-pei-zhi-nginx-conf-wen-jian/</loc>
-    <lastmod>2019-07-31T08:33:17.801Z</lastmod>
-    <data>
-        <display>
-        <title>Nginx认识nginx.conf配置文件</title>
-        <pubTime>2018-10-10T04:39:00.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Nginx</tag>
-         
-         
-           
-             
-              <breadCrumb title="Linux" url="https://qianxunclub.com/categories/Linux/"/>
           
         </display>
     </data>
@@ -398,47 +425,21 @@
 
     
   <url>
-    <loc>https://qianxunclub.com/linux/ansible-de-an-zhuang-he-shi-yong-ssh-pass/</loc>
+    <loc>https://qianxunclub.com/linux/nginx-pei-zhi-nginx-conf-wen-jian/</loc>
     <lastmod>2019-07-31T08:33:17.801Z</lastmod>
     <data>
         <display>
-        <title>ansible的安装配置和配合sshpass的使用</title>
-        <pubTime>2018-11-21T04:39:00.000Z</pubTime>
+        <title>Nginx认识nginx.conf配置文件</title>
+        <pubTime>2018-10-10T04:39:00.000Z</pubTime>
         
-        <tag>Ansible</tag>
-         
         <tag>Linux</tag>
          
-        <tag>Mac</tag>
+        <tag>Nginx</tag>
          
          
            
              
               <breadCrumb title="Linux" url="https://qianxunclub.com/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://qianxunclub.com/exception/springboot-elasticsearch-qi-dong-yi-chang/</loc>
-    <lastmod>2019-07-31T08:33:17.800Z</lastmod>
-    <data>
-        <display>
-        <title>SpringBoot使用elasticsearch异常：NoSuchMethodError:org.jboss.netty.channel.socket.nio.NioWorker</title>
-        <pubTime>2018-08-24T02:40:00.000Z</pubTime>
-        
-        <tag>Exception</tag>
-         
-        <tag>SpringBoot</tag>
-         
-        <tag>Elasticsearch</tag>
-         
-         
-           
-             
-              <breadCrumb title="异常记录" url="https://qianxunclub.com/categories/%E5%BC%82%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
           
         </display>
     </data>
@@ -521,6 +522,30 @@
 
     
   <url>
+    <loc>https://qianxunclub.com/exception/springboot-elasticsearch-qi-dong-yi-chang/</loc>
+    <lastmod>2019-07-31T08:33:17.800Z</lastmod>
+    <data>
+        <display>
+        <title>SpringBoot使用elasticsearch异常：NoSuchMethodError:org.jboss.netty.channel.socket.nio.NioWorker</title>
+        <pubTime>2018-08-24T02:40:00.000Z</pubTime>
+        
+        <tag>Exception</tag>
+         
+        <tag>SpringBoot</tag>
+         
+        <tag>Elasticsearch</tag>
+         
+         
+           
+             
+              <breadCrumb title="异常记录" url="https://qianxunclub.com/categories/%E5%BC%82%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://qianxunclub.com/exception/springboot-elasticsearch-yi-chang/</loc>
     <lastmod>2019-07-31T08:33:17.800Z</lastmod>
     <data>
@@ -545,43 +570,19 @@
 
     
   <url>
-    <loc>https://qianxunclub.com/exception/spring-boot-tomcat-qi-dong-shi-bai/</loc>
+    <loc>https://qianxunclub.com/exception/fastdfs-recv-package-size/</loc>
     <lastmod>2019-07-31T08:33:17.799Z</lastmod>
     <data>
         <display>
-        <title>SpringBoot启动Tomcat失败：Unable to start embedded Tomcat</title>
-        <pubTime>2018-05-22T02:40:00.000Z</pubTime>
+        <title>fastdfs第一次上传文件报错recv package size -1!=10</title>
+        <pubTime>2018-07-30T03:27:23.000Z</pubTime>
         
         <tag>Exception</tag>
-         
-        <tag>SpringBoot</tag>
          
          
            
              
               <breadCrumb title="异常记录" url="https://qianxunclub.com/categories/%E5%BC%82%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://qianxunclub.com/cache/huan-cun-chuan-tou-huan-cun-ji-chuan-huan-cun-xue-beng-jie-jue-fang-an-fen-xi/</loc>
-    <lastmod>2019-07-31T08:33:17.799Z</lastmod>
-    <data>
-        <display>
-        <title>缓存穿透，缓存击穿，缓存雪崩解决方案分析</title>
-        <pubTime>2017-04-18T03:27:23.000Z</pubTime>
-        
-        <tag>Redis</tag>
-         
-        <tag>缓存</tag>
-         
-         
-           
-             
-              <breadCrumb title="缓存技术" url="https://qianxunclub.com/categories/%E7%BC%93%E5%AD%98%E6%8A%80%E6%9C%AF/"/>
           
         </display>
     </data>
@@ -635,14 +636,38 @@
 
     
   <url>
-    <loc>https://qianxunclub.com/exception/fastdfs-recv-package-size/</loc>
+    <loc>https://qianxunclub.com/cache/huan-cun-chuan-tou-huan-cun-ji-chuan-huan-cun-xue-beng-jie-jue-fang-an-fen-xi/</loc>
     <lastmod>2019-07-31T08:33:17.799Z</lastmod>
     <data>
         <display>
-        <title>fastdfs第一次上传文件报错recv package size -1!=10</title>
-        <pubTime>2018-07-30T03:27:23.000Z</pubTime>
+        <title>缓存穿透，缓存击穿，缓存雪崩解决方案分析</title>
+        <pubTime>2017-04-18T03:27:23.000Z</pubTime>
+        
+        <tag>Redis</tag>
+         
+        <tag>缓存</tag>
+         
+         
+           
+             
+              <breadCrumb title="缓存技术" url="https://qianxunclub.com/categories/%E7%BC%93%E5%AD%98%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://qianxunclub.com/exception/spring-boot-tomcat-qi-dong-shi-bai/</loc>
+    <lastmod>2019-07-31T08:33:17.799Z</lastmod>
+    <data>
+        <display>
+        <title>SpringBoot启动Tomcat失败：Unable to start embedded Tomcat</title>
+        <pubTime>2018-05-22T02:40:00.000Z</pubTime>
         
         <tag>Exception</tag>
+         
+        <tag>SpringBoot</tag>
          
          
            

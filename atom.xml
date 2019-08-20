@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qianxunclub.com/"/>
-  <updated>2019-08-08T10:25:41.299Z</updated>
+  <updated>2019-08-20T02:08:27.086Z</updated>
   <id>https://qianxunclub.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JAVA Bean 中的 VO、BO、DO、DTO</title>
+    <link href="https://qianxunclub.com/java/base/java-model-guifan/"/>
+    <id>https://qianxunclub.com/java/base/java-model-guifan/</id>
+    <published>2019-08-19T18:41:37.000Z</published>
+    <updated>2019-08-20T02:08:27.086Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>VO：VO（View Object） 通常是请求处理层传输的对象，它通过 Spring 框架的转换后，往往是一个 JSON 对象。<a id="more"></a></li><li>BO：BO（Business Object），它是业务逻辑层封装业务逻辑的对象，一般情况下，它是聚合了多个数据源的复合对象。</li><li>DO：DO（Data Object）与数据库表结构一一对应，通过 DAO 层向上传输数据源对象。</li><li>DTO：DTO（Data Transfer Object）是远程调用对象，它是 RPC 服务提供的领域模型。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;VO：VO（View Object） 通常是请求处理层传输的对象，它通过 Spring 框架的转换后，往往是一个 JSON 对象。
+    
+    </summary>
+    
+      <category term="Java" scheme="https://qianxunclub.com/categories/Java/"/>
+    
+      <category term="Bean" scheme="https://qianxunclub.com/categories/Java/Bean/"/>
+    
+    
+      <category term="Java" scheme="https://qianxunclub.com/tags/Java/"/>
+    
+      <category term="Bean" scheme="https://qianxunclub.com/tags/Bean/"/>
+    
+  </entry>
   
   <entry>
     <title>Centos7 手动编译升级 gcc</title>
@@ -259,9 +286,9 @@
     
       <category term="SpringBoot" scheme="https://qianxunclub.com/tags/SpringBoot/"/>
     
-      <category term="Linux" scheme="https://qianxunclub.com/tags/Linux/"/>
-    
       <category term="Elasticsearch" scheme="https://qianxunclub.com/tags/Elasticsearch/"/>
+    
+      <category term="Linux" scheme="https://qianxunclub.com/tags/Linux/"/>
     
   </entry>
   
@@ -536,30 +563,6 @@
       <category term="Java" scheme="https://qianxunclub.com/tags/Java/"/>
     
       <category term="Maven" scheme="https://qianxunclub.com/tags/Maven/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>这个世界，总有人偷偷爱着你</title>
-    <link href="https://qianxunclub.com/video/zhe-ge-shi-jie-zong-you-ren-tou-tou-ai-zhao-ni/"/>
-    <id>https://qianxunclub.com/video/zhe-ge-shi-jie-zong-you-ren-tou-tou-ai-zhao-ni/</id>
-    <published>2018-05-07T17:44:27.000Z</published>
-    <updated>2019-07-31T08:33:17.803Z</updated>
-    
-    <content type="html"><![CDATA[<p>这是999感冒灵推出的感恩节短片视频<br>广告片选取真人事件改编<br>以一段网络问答为线<br>串联5个反转故事  </p><a id="more"></a><iframe frameborder="0" width="800" height="450" src="https://v.qq.com/iframe/player.html?vid=g0508voeofz&tiny=0&auto=0" allowfullscreen></iframe>  <p>这是999感冒灵推出的感恩节短片视频<br>广告片选取真人事件改编<br>以一段网络问答为线<br>串联5个反转故事<br>反转前的文案非常直接无情地揭开了生活冷漠的一面<br>每个人都自顾不暇<br>没有人会在意你的感受<br>每个人都小心翼翼地活着<br>没有人在乎你的境遇<br>行色匆匆的人群里<br>你并不特别也不会有优待<br>你的苦楚<br>不过是别人眼里的笑话<br>人心冷漠的世界里<br>每个人都无处可逃<br>即使已经听惯了毒鸡汤<br>还是被这些话呕出一口血<br>大概是因为事实如此无法反驳吧<br>可是<br>这个世界不会好了吗？<br>故事总是有反转的</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这是999感冒灵推出的感恩节短片视频&lt;br&gt;广告片选取真人事件改编&lt;br&gt;以一段网络问答为线&lt;br&gt;串联5个反转故事  &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="视频" scheme="https://qianxunclub.com/categories/%E8%A7%86%E9%A2%91/"/>
-    
-    
-      <category term="视频" scheme="https://qianxunclub.com/tags/%E8%A7%86%E9%A2%91/"/>
-    
-      <category term="公益广告" scheme="https://qianxunclub.com/tags/%E5%85%AC%E7%9B%8A%E5%B9%BF%E5%91%8A/"/>
     
   </entry>
   
