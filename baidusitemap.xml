@@ -51,12 +51,12 @@
     
     
   <url>
-    <loc>https://qianxunclub.com/video/zhe-ge-shi-jie-zong-you-ren-tou-tou-ai-zhao-ni/</loc>
+    <loc>https://qianxunclub.com/video/my-father-is-liar/</loc>
     <lastmod>2019-07-31T08:33:17.803Z</lastmod>
     <data>
         <display>
-        <title>这个世界，总有人偷偷爱着你</title>
-        <pubTime>2018-05-07T17:44:27.000Z</pubTime>
+        <title>《我的爸爸是个骗子》风靡全球</title>
+        <pubTime>2016-11-27T16:00:00.000Z</pubTime>
         
         <tag>视频</tag>
          
@@ -139,12 +139,12 @@
 
     
   <url>
-    <loc>https://qianxunclub.com/video/my-father-is-liar/</loc>
+    <loc>https://qianxunclub.com/video/zhe-ge-shi-jie-zong-you-ren-tou-tou-ai-zhao-ni/</loc>
     <lastmod>2019-07-31T08:33:17.803Z</lastmod>
     <data>
         <display>
-        <title>《我的爸爸是个骗子》风靡全球</title>
-        <pubTime>2016-11-27T16:00:00.000Z</pubTime>
+        <title>这个世界，总有人偷偷爱着你</title>
+        <pubTime>2018-05-07T17:44:27.000Z</pubTime>
         
         <tag>视频</tag>
          
@@ -181,6 +181,26 @@
 
     
   <url>
+    <loc>https://qianxunclub.com/tech/cheng-xu-yuan-bi-bei-kai-fa-gong-ju-ti-gao-gong-zuo-xiao-lv/</loc>
+    <lastmod>2019-07-31T08:33:17.802Z</lastmod>
+    <data>
+        <display>
+        <title>程序员必备开发工具，提高开发效率的神兵利器，大多都是免费的哦</title>
+        <pubTime>2018-07-04T08:18:00.000Z</pubTime>
+        
+        <tag>工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术杂文" url="https://qianxunclub.com/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://qianxunclub.com/tech/elasticsearch-install/</loc>
     <lastmod>2019-07-31T08:33:17.802Z</lastmod>
     <data>
@@ -198,26 +218,6 @@
            
              
               <breadCrumb title="技术杂文" url="https://qianxunclub.com/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://qianxunclub.com/linux/zi-dong-hua-gong-ju-ansiblewan-zheng-an-zhuang-pi-liang-de-zai-yuan-cheng-fu-wu-qi-shang-zhi-xing-ming-ling/</loc>
-    <lastmod>2019-07-31T08:33:17.802Z</lastmod>
-    <data>
-        <display>
-        <title>自动化工具 ansible完整安装</title>
-        <pubTime>2016-11-15T16:00:00.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-         
-           
-             
-              <breadCrumb title="Linux" url="https://qianxunclub.com/categories/Linux/"/>
           
         </display>
     </data>
@@ -273,19 +273,19 @@
 
     
   <url>
-    <loc>https://qianxunclub.com/tech/cheng-xu-yuan-bi-bei-kai-fa-gong-ju-ti-gao-gong-zuo-xiao-lv/</loc>
+    <loc>https://qianxunclub.com/linux/zi-dong-hua-gong-ju-ansiblewan-zheng-an-zhuang-pi-liang-de-zai-yuan-cheng-fu-wu-qi-shang-zhi-xing-ming-ling/</loc>
     <lastmod>2019-07-31T08:33:17.802Z</lastmod>
     <data>
         <display>
-        <title>程序员必备开发工具，提高开发效率的神兵利器，大多都是免费的哦</title>
-        <pubTime>2018-07-04T08:18:00.000Z</pubTime>
+        <title>自动化工具 ansible完整安装</title>
+        <pubTime>2016-11-15T16:00:00.000Z</pubTime>
         
-        <tag>工具</tag>
+        <tag>Linux</tag>
          
          
            
              
-              <breadCrumb title="技术杂文" url="https://qianxunclub.com/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E6%96%87/"/>
+              <breadCrumb title="Linux" url="https://qianxunclub.com/categories/Linux/"/>
           
         </display>
     </data>
@@ -319,28 +319,6 @@
 
     
   <url>
-    <loc>https://qianxunclub.com/linux/nginx-pei-zhi-nginx-conf-wen-jian/</loc>
-    <lastmod>2019-07-31T08:33:17.801Z</lastmod>
-    <data>
-        <display>
-        <title>Nginx认识nginx.conf配置文件</title>
-        <pubTime>2018-10-10T04:39:00.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Nginx</tag>
-         
-         
-           
-             
-              <breadCrumb title="Linux" url="https://qianxunclub.com/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://qianxunclub.com/linux/ansible-de-an-zhuang-he-shi-yong-ssh-pass/</loc>
     <lastmod>2019-07-31T08:33:17.801Z</lastmod>
     <data>
@@ -358,33 +336,6 @@
            
              
               <breadCrumb title="Linux" url="https://qianxunclub.com/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://qianxunclub.com/java/spring-cloud/spring-cloud-config-fen-bu-shi-pei-zhi-zhong-xin/</loc>
-    <lastmod>2019-07-31T08:33:17.801Z</lastmod>
-    <data>
-        <display>
-        <title>Spring Cloud Config分布式配置中心的使用和遇到的坑</title>
-        <pubTime>2018-06-06T02:09:55.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>分布式</tag>
-         
-        <tag>SpringCloud</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="https://qianxunclub.com/categories/Java/"/>
-          
-             
-              <breadCrumb title="SpringCloud" url="https://qianxunclub.com/categories/Java/SpringCloud/"/>
           
         </display>
     </data>
@@ -442,64 +393,18 @@
 
     
   <url>
-    <loc>https://qianxunclub.com/exception/springboot-elasticsearch-yi-chang/</loc>
-    <lastmod>2019-07-31T08:33:17.800Z</lastmod>
+    <loc>https://qianxunclub.com/java/spring-cloud/spring-cloud-config-fen-bu-shi-pei-zhi-zhong-xin/</loc>
+    <lastmod>2019-07-31T08:33:17.801Z</lastmod>
     <data>
         <display>
-        <title>SpringBoot启动使用elasticsearch启动异常：Received message from unsupported version:[2.0.0] minimal compatible version is:[5.6.0]</title>
-        <pubTime>2018-08-24T02:40:00.000Z</pubTime>
+        <title>Spring Cloud Config分布式配置中心的使用和遇到的坑</title>
+        <pubTime>2018-06-06T02:09:55.000Z</pubTime>
         
-        <tag>Exception</tag>
-         
-        <tag>SpringBoot</tag>
-         
-        <tag>Elasticsearch</tag>
-         
-         
-           
-             
-              <breadCrumb title="异常记录" url="https://qianxunclub.com/categories/%E5%BC%82%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://qianxunclub.com/exception/springboot-elasticsearch-qi-dong-yi-chang/</loc>
-    <lastmod>2019-07-31T08:33:17.800Z</lastmod>
-    <data>
-        <display>
-        <title>SpringBoot使用elasticsearch异常：NoSuchMethodError:org.jboss.netty.channel.socket.nio.NioWorker</title>
-        <pubTime>2018-08-24T02:40:00.000Z</pubTime>
-        
-        <tag>Exception</tag>
-         
-        <tag>SpringBoot</tag>
-         
-        <tag>Elasticsearch</tag>
-         
-         
-           
-             
-              <breadCrumb title="异常记录" url="https://qianxunclub.com/categories/%E5%BC%82%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://qianxunclub.com/java/spring-boot/springboot-shixian-12306-qiangpiao/</loc>
-    <lastmod>2019-07-31T08:33:17.800Z</lastmod>
-    <data>
-        <display>
-        <title>SpringBoot实现12306自动抢票系统</title>
-        <pubTime>2019-06-12T03:22:12.000Z</pubTime>
-        
-        <tag>SpringBoot</tag>
-         
         <tag>Java</tag>
+         
+        <tag>分布式</tag>
+         
+        <tag>SpringCloud</tag>
          
          
            
@@ -507,7 +412,29 @@
               <breadCrumb title="Java" url="https://qianxunclub.com/categories/Java/"/>
           
              
-              <breadCrumb title="SpringBoot" url="https://qianxunclub.com/categories/Java/SpringBoot/"/>
+              <breadCrumb title="SpringCloud" url="https://qianxunclub.com/categories/Java/SpringCloud/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://qianxunclub.com/linux/nginx-pei-zhi-nginx-conf-wen-jian/</loc>
+    <lastmod>2019-07-31T08:33:17.801Z</lastmod>
+    <data>
+        <display>
+        <title>Nginx认识nginx.conf配置文件</title>
+        <pubTime>2018-10-10T04:39:00.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Nginx</tag>
+         
+         
+           
+             
+              <breadCrumb title="Linux" url="https://qianxunclub.com/categories/Linux/"/>
           
         </display>
     </data>
@@ -565,6 +492,79 @@
 
     
   <url>
+    <loc>https://qianxunclub.com/java/spring-boot/springboot-shixian-12306-qiangpiao/</loc>
+    <lastmod>2019-07-31T08:33:17.800Z</lastmod>
+    <data>
+        <display>
+        <title>SpringBoot实现12306自动抢票系统</title>
+        <pubTime>2019-06-12T03:22:12.000Z</pubTime>
+        
+        <tag>SpringBoot</tag>
+         
+        <tag>Java</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://qianxunclub.com/categories/Java/"/>
+          
+             
+              <breadCrumb title="SpringBoot" url="https://qianxunclub.com/categories/Java/SpringBoot/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://qianxunclub.com/exception/springboot-elasticsearch-qi-dong-yi-chang/</loc>
+    <lastmod>2019-07-31T08:33:17.800Z</lastmod>
+    <data>
+        <display>
+        <title>SpringBoot使用elasticsearch异常：NoSuchMethodError:org.jboss.netty.channel.socket.nio.NioWorker</title>
+        <pubTime>2018-08-24T02:40:00.000Z</pubTime>
+        
+        <tag>Exception</tag>
+         
+        <tag>SpringBoot</tag>
+         
+        <tag>Elasticsearch</tag>
+         
+         
+           
+             
+              <breadCrumb title="异常记录" url="https://qianxunclub.com/categories/%E5%BC%82%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://qianxunclub.com/exception/springboot-elasticsearch-yi-chang/</loc>
+    <lastmod>2019-07-31T08:33:17.800Z</lastmod>
+    <data>
+        <display>
+        <title>SpringBoot启动使用elasticsearch启动异常：Received message from unsupported version:[2.0.0] minimal compatible version is:[5.6.0]</title>
+        <pubTime>2018-08-24T02:40:00.000Z</pubTime>
+        
+        <tag>Exception</tag>
+         
+        <tag>SpringBoot</tag>
+         
+        <tag>Elasticsearch</tag>
+         
+         
+           
+             
+              <breadCrumb title="异常记录" url="https://qianxunclub.com/categories/%E5%BC%82%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://qianxunclub.com/exception/kafka-exception-could-not-be-resolved/</loc>
     <lastmod>2019-07-31T08:33:17.799Z</lastmod>
     <data>
@@ -587,18 +587,14 @@
 
     
   <url>
-    <loc>https://qianxunclub.com/exception/redis-qi-dong-bao-cuo-cluster-support-disabled/</loc>
+    <loc>https://qianxunclub.com/exception/fastdfs-recv-package-size/</loc>
     <lastmod>2019-07-31T08:33:17.799Z</lastmod>
     <data>
         <display>
-        <title>SpringBoot的redis启动报错：ERR This instance has cluster support disabled</title>
-        <pubTime>2018-05-28T06:27:23.000Z</pubTime>
+        <title>fastdfs第一次上传文件报错recv package size -1!=10</title>
+        <pubTime>2018-07-30T03:27:23.000Z</pubTime>
         
         <tag>Exception</tag>
-         
-        <tag>Redis</tag>
-         
-        <tag>SpringBoot</tag>
          
          
            
@@ -633,14 +629,18 @@
 
     
   <url>
-    <loc>https://qianxunclub.com/exception/fastdfs-recv-package-size/</loc>
+    <loc>https://qianxunclub.com/exception/redis-qi-dong-bao-cuo-cluster-support-disabled/</loc>
     <lastmod>2019-07-31T08:33:17.799Z</lastmod>
     <data>
         <display>
-        <title>fastdfs第一次上传文件报错recv package size -1!=10</title>
-        <pubTime>2018-07-30T03:27:23.000Z</pubTime>
+        <title>SpringBoot的redis启动报错：ERR This instance has cluster support disabled</title>
+        <pubTime>2018-05-28T06:27:23.000Z</pubTime>
         
         <tag>Exception</tag>
+         
+        <tag>Redis</tag>
+         
+        <tag>SpringBoot</tag>
          
          
            
