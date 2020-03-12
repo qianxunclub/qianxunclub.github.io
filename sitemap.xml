@@ -37,13 +37,6 @@
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/video/my-father-is-liar/</loc>
-    
-    <lastmod>2019-07-31T08:33:17.803Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://qianxunclub.com/tech/gao-zhi-liang-mian-shi-ti/</loc>
     
     <lastmod>2019-07-31T08:33:17.803Z</lastmod>
@@ -58,7 +51,21 @@
   </url>
   
   <url>
+    <loc>https://qianxunclub.com/tech/httqing-qiu-fan-hui-bian-ma-da-quan-yi-ji-jie-shi-fen-lei/</loc>
+    
+    <lastmod>2019-07-31T08:33:17.803Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://qianxunclub.com/tech/xing-yun-da-zhuan-pan-chou-jiang-cheng-xu-shi-xian-luo-ji/</loc>
+    
+    <lastmod>2019-07-31T08:33:17.803Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://qianxunclub.com/video/my-father-is-liar/</loc>
     
     <lastmod>2019-07-31T08:33:17.803Z</lastmod>
     
@@ -72,13 +79,6 @@
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/tech/httqing-qiu-fan-hui-bian-ma-da-quan-yi-ji-jie-shi-fen-lei/</loc>
-    
-    <lastmod>2019-07-31T08:33:17.803Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://qianxunclub.com/tech/cheng-xu-yuan-bi-bei-kai-fa-gong-ju-ti-gao-gong-zuo-xiao-lv/</loc>
     
     <lastmod>2019-07-31T08:33:17.802Z</lastmod>
@@ -86,14 +86,21 @@
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/tech/elasticsearch-install/</loc>
+    <loc>https://qianxunclub.com/other/ni-ma-a-keng-die-de-peng-you-quan-qing-fang-guo-wo-ba-wo-ma-ba/</loc>
     
     <lastmod>2019-07-31T08:33:17.802Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/other/ni-ma-a-keng-die-de-peng-you-quan-qing-fang-guo-wo-ba-wo-ma-ba/</loc>
+    <loc>https://qianxunclub.com/tech/apollo-pei-zhi-zhong-xin-an-zhuang-bu-shu/</loc>
+    
+    <lastmod>2019-07-31T08:33:17.802Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://qianxunclub.com/tech/elasticsearch-install/</loc>
     
     <lastmod>2019-07-31T08:33:17.802Z</lastmod>
     
@@ -114,14 +121,14 @@
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/tech/apollo-pei-zhi-zhong-xin-an-zhuang-bu-shu/</loc>
+    <loc>https://qianxunclub.com/linux/ansible-de-an-zhuang-he-shi-yong-ssh-pass/</loc>
     
-    <lastmod>2019-07-31T08:33:17.802Z</lastmod>
+    <lastmod>2019-07-31T08:33:17.801Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/linux/ansible-de-an-zhuang-he-shi-yong-ssh-pass/</loc>
+    <loc>https://qianxunclub.com/linux/nginx-pei-zhi-nginx-conf-wen-jian/</loc>
     
     <lastmod>2019-07-31T08:33:17.801Z</lastmod>
     
@@ -149,14 +156,14 @@
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/linux/nginx-pei-zhi-nginx-conf-wen-jian/</loc>
+    <loc>https://qianxunclub.com/exception/springboot-elasticsearch-qi-dong-yi-chang/</loc>
     
-    <lastmod>2019-07-31T08:33:17.801Z</lastmod>
+    <lastmod>2019-07-31T08:33:17.800Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/java/maven/ru-he-shang-chuan-zi-ji-de-jarbao-dao-mavengong-gong-yuan-cheng-zhong-yang-cang-ku/</loc>
+    <loc>https://qianxunclub.com/exception/springboot-elasticsearch-yi-chang/</loc>
     
     <lastmod>2019-07-31T08:33:17.800Z</lastmod>
     
@@ -177,21 +184,21 @@
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/exception/springboot-elasticsearch-qi-dong-yi-chang/</loc>
+    <loc>https://qianxunclub.com/java/maven/ru-he-shang-chuan-zi-ji-de-jarbao-dao-mavengong-gong-yuan-cheng-zhong-yang-cang-ku/</loc>
     
     <lastmod>2019-07-31T08:33:17.800Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/exception/springboot-elasticsearch-yi-chang/</loc>
+    <loc>https://qianxunclub.com/cache/huan-cun-chuan-tou-huan-cun-ji-chuan-huan-cun-xue-beng-jie-jue-fang-an-fen-xi/</loc>
     
-    <lastmod>2019-07-31T08:33:17.800Z</lastmod>
+    <lastmod>2019-07-31T08:33:17.799Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/exception/kafka-exception-could-not-be-resolved/</loc>
+    <loc>https://qianxunclub.com/exception/redis-qi-dong-bao-cuo-cluster-support-disabled/</loc>
     
     <lastmod>2019-07-31T08:33:17.799Z</lastmod>
     
@@ -212,14 +219,7 @@
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/exception/redis-qi-dong-bao-cuo-cluster-support-disabled/</loc>
-    
-    <lastmod>2019-07-31T08:33:17.799Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://qianxunclub.com/cache/huan-cun-chuan-tou-huan-cun-ji-chuan-huan-cun-xue-beng-jie-jue-fang-an-fen-xi/</loc>
+    <loc>https://qianxunclub.com/exception/kafka-exception-could-not-be-resolved/</loc>
     
     <lastmod>2019-07-31T08:33:17.799Z</lastmod>
     
