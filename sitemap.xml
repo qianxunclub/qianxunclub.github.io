@@ -44,21 +44,14 @@
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/tech/shi-yong-github-zuo-wen-jian-cun-chu/</loc>
-    
-    <lastmod>2019-07-31T08:33:17.803Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://qianxunclub.com/tech/httqing-qiu-fan-hui-bian-ma-da-quan-yi-ji-jie-shi-fen-lei/</loc>
-    
-    <lastmod>2019-07-31T08:33:17.803Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://qianxunclub.com/tech/xing-yun-da-zhuan-pan-chou-jiang-cheng-xu-shi-xian-luo-ji/</loc>
+    
+    <lastmod>2019-07-31T08:33:17.803Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://qianxunclub.com/tech/shi-yong-github-zuo-wen-jian-cun-chu/</loc>
     
     <lastmod>2019-07-31T08:33:17.803Z</lastmod>
     
@@ -72,6 +65,13 @@
   </url>
   
   <url>
+    <loc>https://qianxunclub.com/tech/httqing-qiu-fan-hui-bian-ma-da-quan-yi-ji-jie-shi-fen-lei/</loc>
+    
+    <lastmod>2019-07-31T08:33:17.803Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://qianxunclub.com/video/zhe-ge-shi-jie-zong-you-ren-tou-tou-ai-zhao-ni/</loc>
     
     <lastmod>2019-07-31T08:33:17.803Z</lastmod>
@@ -79,7 +79,14 @@
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/tech/cheng-xu-yuan-bi-bei-kai-fa-gong-ju-ti-gao-gong-zuo-xiao-lv/</loc>
+    <loc>https://qianxunclub.com/linux/zai-yuan-you-de-nginx-an-zhuang-openresty/</loc>
+    
+    <lastmod>2019-07-31T08:33:17.802Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://qianxunclub.com/linux/zi-dong-hua-gong-ju-ansiblewan-zheng-an-zhuang-pi-liang-de-zai-yuan-cheng-fu-wu-qi-shang-zhi-xing-ming-ling/</loc>
     
     <lastmod>2019-07-31T08:33:17.802Z</lastmod>
     
@@ -87,6 +94,13 @@
   
   <url>
     <loc>https://qianxunclub.com/other/ni-ma-a-keng-die-de-peng-you-quan-qing-fang-guo-wo-ba-wo-ma-ba/</loc>
+    
+    <lastmod>2019-07-31T08:33:17.802Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://qianxunclub.com/tech/cheng-xu-yuan-bi-bei-kai-fa-gong-ju-ti-gao-gong-zuo-xiao-lv/</loc>
     
     <lastmod>2019-07-31T08:33:17.802Z</lastmod>
     
@@ -107,20 +121,6 @@
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/linux/zai-yuan-you-de-nginx-an-zhuang-openresty/</loc>
-    
-    <lastmod>2019-07-31T08:33:17.802Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://qianxunclub.com/linux/zi-dong-hua-gong-ju-ansiblewan-zheng-an-zhuang-pi-liang-de-zai-yuan-cheng-fu-wu-qi-shang-zhi-xing-ming-ling/</loc>
-    
-    <lastmod>2019-07-31T08:33:17.802Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://qianxunclub.com/linux/ansible-de-an-zhuang-he-shi-yong-ssh-pass/</loc>
     
     <lastmod>2019-07-31T08:33:17.801Z</lastmod>
@@ -135,14 +135,14 @@
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/java/spring-boot/springbootshi-yong-hibernate-validatorli-yong-aop/</loc>
+    <loc>https://qianxunclub.com/java/spring-boot/zi-ding-yi-springboot-starter-parent-tongyi-kaifa-guifan-tigao-kaifa-xiaolv/</loc>
     
     <lastmod>2019-07-31T08:33:17.801Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/java/spring-boot/zi-ding-yi-springboot-starter-parent-tongyi-kaifa-guifan-tigao-kaifa-xiaolv/</loc>
+    <loc>https://qianxunclub.com/java/spring-boot/springbootshi-yong-hibernate-validatorli-yong-aop/</loc>
     
     <lastmod>2019-07-31T08:33:17.801Z</lastmod>
     
@@ -170,6 +170,13 @@
   </url>
   
   <url>
+    <loc>https://qianxunclub.com/java/maven/ru-he-shang-chuan-zi-ji-de-jarbao-dao-mavengong-gong-yuan-cheng-zhong-yang-cang-ku/</loc>
+    
+    <lastmod>2019-07-31T08:33:17.800Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://qianxunclub.com/java/maven/apidocde-mavencha-jian-zi-dong-sheng-cheng-apidoc-json/</loc>
     
     <lastmod>2019-07-31T08:33:17.800Z</lastmod>
@@ -184,13 +191,6 @@
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/java/maven/ru-he-shang-chuan-zi-ji-de-jarbao-dao-mavengong-gong-yuan-cheng-zhong-yang-cang-ku/</loc>
-    
-    <lastmod>2019-07-31T08:33:17.800Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://qianxunclub.com/cache/huan-cun-chuan-tou-huan-cun-ji-chuan-huan-cun-xue-beng-jie-jue-fang-an-fen-xi/</loc>
     
     <lastmod>2019-07-31T08:33:17.799Z</lastmod>
@@ -198,7 +198,7 @@
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/exception/redis-qi-dong-bao-cuo-cluster-support-disabled/</loc>
+    <loc>https://qianxunclub.com/exception/kafka-exception-could-not-be-resolved/</loc>
     
     <lastmod>2019-07-31T08:33:17.799Z</lastmod>
     
@@ -212,14 +212,14 @@
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/exception/spring-boot-tomcat-qi-dong-shi-bai/</loc>
+    <loc>https://qianxunclub.com/exception/redis-qi-dong-bao-cuo-cluster-support-disabled/</loc>
     
     <lastmod>2019-07-31T08:33:17.799Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://qianxunclub.com/exception/kafka-exception-could-not-be-resolved/</loc>
+    <loc>https://qianxunclub.com/exception/spring-boot-tomcat-qi-dong-shi-bai/</loc>
     
     <lastmod>2019-07-31T08:33:17.799Z</lastmod>
     
